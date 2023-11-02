@@ -1,15 +1,15 @@
 @@echo off
 
-set ROOT="@{PREFIX}"
-set MSVC_VERSION="@{MSVC_VERSION}"
-set MSVC_HOST="Host@{HOST_ARCH}"
-set MSVC_ARCH="@{TARGET_ARCH}"
-set SDK_VERSION="@{SDK_VERSION}"
-set SDK_ARCH="@{SDK_TARGET_ARCH}"
+set ROOT=%CONDA_PREFIX%
+set MSVC_VERSION=@{MSVC_VERSION}
+set MSVC_HOST=Host@{HOST_ARCH}
+set MSVC_ARCH=@{TARGET_ARCH}
+set SDK_VERSION=@{SDK_VERSION}
+set SDK_ARCH=@{SDK_TARGET_ARCH}
 
-set MSVC_ROOT=%ROOT%VC\\Tools\\MSVC\\%MSVC_VERSION%
-set SDK_INCLUDE=%ROOT%Windows Kits\\10\\Include\\%SDK_VERSION%
-set SDK_LIBS=%ROOT%Windows Kits\\10\\Lib\\%SDK_VERSION%
+set MSVC_ROOT=%ROOT%\\VC\\Tools\\MSVC\\%MSVC_VERSION%
+set SDK_INCLUDE=%ROOT%\\Windows Kits\\10\\Include\\%SDK_VERSION%
+set SDK_LIBS=%ROOT%\\Windows Kits\\10\\Lib\\%SDK_VERSION%
 
 set VCToolsInstallDir=%MSVC_ROOT%\\
 set PATH=%MSVC_ROOT%\\bin\\%MSVC_HOST%\\%MSVC_ARCH%;%ROOT%Windows Kits\\10\\bin\\%SDK_VERSION%\\%SDK_ARCH%;%ROOT%Windows Kits\\10\\bin\\%SDK_VERSION%\\%SDK_ARCH%\\ucrt;%PATH%

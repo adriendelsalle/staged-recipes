@@ -71,7 +71,7 @@ def main():
     )
   args = ap.parse_args()
 
-  OUTPUT = Path(os.environ["BUILD_PREFIX"]) / "test" # output folder
+  OUTPUT = Path(os.environ["LIBRARY_PREFIX"]) / "test" # output folder
 
   # get and validate components
   components = set(args.components)
@@ -313,7 +313,7 @@ def main():
           "RECIPE_DIR",
           "SRC_DIR",
           "PREFIX",
-          "BUILD_PREFIX",
+          "LIBRARY_PREFIX",
           "LIBRARY_BIN",
       ]
 
