@@ -1,0 +1,63 @@
+{% set name = "vs_buildtools" %}
+{% set version = "14.31.17.1" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+build:
+  number: 0
+
+outputs:
+  - name: {{ name }}-msvc_x64
+    script: installer.py
+    script_interpreter: >-
+      python -m installer --accept-license --components msvc --discard
+    requirements:
+      host:
+      run:
+      build:
+        - python
+
+  - name: {{ name }}-asan_x64
+    script: installer.py
+    script_interpreter: >-
+      python -m installer --accept-license --components asan --discard
+    requirements:
+      host:
+      run:
+      build:
+        - python
+
+  - name: {{ name }}-crt_x64
+    script: installer.py
+    script_interpreter: >-
+      python -m installer --accept-license --components crt --discard
+    requirements:
+      host:
+      run:
+      build:
+        - python
+
+  - name: {{ name }}-sdk_x64
+    script: installer.py
+    script_interpreter: >-
+      python -m installer --accept-license --components sdk --discard
+    requirements:
+      host:
+      run:
+      build:
+        - python
+
+about:
+  home: foo
+  summary: foo
+  description: foo
+  license: MIT
+  license_family: MIT
+  doc_url: https://simplejson.readthedocs.io/
+  dev_url: https://github.com/simplejson/simplejson
+
+extra:
+  recipe-maintainers:
+    - adriendelsalle
