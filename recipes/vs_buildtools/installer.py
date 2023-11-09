@@ -71,7 +71,7 @@ def main():
     )
   args = ap.parse_args()
 
-  OUTPUT = Path(os.environ["LIBRARY_PREFIX"]) / "test" # output folder
+  OUTPUT = Path(os.environ["LIBRARY_PREFIX"]) / "vs_buildtools" # output folder
 
   # get and validate components
   components = set(args.components)
@@ -354,15 +354,26 @@ def main():
   env = Environment()
   targetdir = os.path.join(env.prefix, "etc", "conda", "activate.d")
   os.makedirs(targetdir)
-  with open(os.path.join(env.recipe_dir, "activate.bat"), "r") as r:
-      with open(
-          os.path.join(
-              targetdir, f"vs_compiler_vars.bat"
-          ),
-          "w",
-      ) as w:
-          for line in r:
-                      w.write(subs(line, args))
+  if "msvc" in components:
+    with open(os.path.join(env.recipe_dir, "activate_msvc.bat"), "r") as r:
+        with open(
+            os.path.join(
+                targetdir, f"vs_buildtools-msvc.bat"
+            ),
+            "w",
+        ) as w:
+            for line in r:
+                        w.write(subs(line, args))
+  if "sdk" in components:
+    with open(os.path.join(env.recipe_dir, "activate_sdk.bat"), "r") as r:
+        with open(
+            os.path.join(
+                targetdir, f"vs_buildtools-sdk.bat"
+            ),
+            "w",
+        ) as w:
+            for line in r:
+                        w.write(subs(line, args))
 
   print(f"Total downloaded: {total_download>>20} MB")
   print("Done!")
