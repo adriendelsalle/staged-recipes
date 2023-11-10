@@ -1,5 +1,6 @@
 {% set name = "vs_buildtools" %}
-{% set version = "14.31.17.1" %}
+{% set version = "14.37.32825"
+ %}
 
 package:
   name: {{ name|lower }}
@@ -16,8 +17,8 @@ outputs:
     requirements:
       host:
       run:
+        - {{ pin_subpackage('vs_buildtools-crt_x64', exact=True) }}
       build:
-        - python
 
   - name: {{ name }}-asan_x64
     script: installer.py
@@ -27,7 +28,6 @@ outputs:
       host:
       run:
       build:
-        - python
 
   - name: {{ name }}-crt_x64
     script: installer.py
@@ -37,7 +37,6 @@ outputs:
       host:
       run:
       build:
-        - python
 
   - name: {{ name }}-sdk_x64
     script: installer.py
@@ -47,7 +46,6 @@ outputs:
       host:
       run:
       build:
-        - python
 
 about:
   home: foo

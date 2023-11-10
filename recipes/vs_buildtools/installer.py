@@ -327,7 +327,7 @@ def main():
                       value = os.path.join(os.environ.get("PREFIX"), "Library", "bin")
                   else:
                       raise RuntimeError(f"{i} not set in environment")
-              self.__attrs[key] = value
+              self.__attrs[key] = Path(value)
 
       def __getattr__(self, name):
           if name in self.__attrs:
@@ -352,31 +352,26 @@ def main():
       return t.substitute(d)
 
   env = Environment()
-  targetdir = os.path.join(env.prefix, "etc", "conda", "activate.d")
-  os.makedirs(targetdir)
+  activation_hooks_dir =Path(env.prefix) / "etc"/ "conda"/ "activate.d"
+  deactivation_hooks_dir = Path(env.prefix) / "etc" / "conda" / "deactivate.d"
+  os.makedirs(activation_hooks_dir, exist_ok=True)
+  os.makedirs(deactivation_hooks_dir, exist_ok=True)
+
+  def copy_and_rename(source, target):
+    with open(source, "r") as r:
+        with open(target,"w") as w:
+            for line in r:
+                w.write(subs(line, args))
+
   if "msvc" in components:
-    with open(os.path.join(env.recipe_dir, "activate_msvc.bat"), "r") as r:
-        with open(
-            os.path.join(
-                targetdir, f"vs_buildtools-msvc.bat"
-            ),
-            "w",
-        ) as w:
-            for line in r:
-                        w.write(subs(line, args))
+    copy_and_rename(env.recipe_dir / "activate_msvc.bat", activation_hooks_dir / "vs_buildtools-msvc.bat")
+    copy_and_rename(env.recipe_dir / "deactivate_msvc.bat", deactivation_hooks_dir / "vs_buildtools-msvc.bat")
+
   if "sdk" in components:
-    with open(os.path.join(env.recipe_dir, "activate_sdk.bat"), "r") as r:
-        with open(
-            os.path.join(
-                targetdir, f"vs_buildtools-sdk.bat"
-            ),
-            "w",
-        ) as w:
-            for line in r:
-                        w.write(subs(line, args))
+    copy_and_rename(env.recipe_dir / "activate_sdk.bat", activation_hooks_dir / "vs_buildtools-sdk.bat")
+    copy_and_rename(env.recipe_dir / "deactivate_sdk.bat", deactivation_hooks_dir / "vs_buildtools-sdk.bat")
 
   print(f"Total downloaded: {total_download>>20} MB")
-  print("Done!")
 
 if __name__ == "__main__":
     main()
