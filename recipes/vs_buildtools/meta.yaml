@@ -1,19 +1,19 @@
 {% set name = "vs_buildtools" %}
-{% set version = "14.37.32825"
- %}
+{% set version = "14.37.32825" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
+
+source:
+  git_url: https://github.com/adriendelsalle/msvc-installer
+  git_tag: improve-installer
 
 build:
   number: 0
 
 outputs:
   - name: {{ name }}-msvc_x64
-    script: installer.py
-    script_interpreter: >-
-      python -m installer --accept-license --components msvc --discard
     requirements:
       host:
       run:
@@ -21,27 +21,18 @@ outputs:
       build:
 
   - name: {{ name }}-asan_x64
-    script: installer.py
-    script_interpreter: >-
-      python -m installer --accept-license --components asan --discard
     requirements:
       host:
       run:
       build:
 
   - name: {{ name }}-crt_x64
-    script: installer.py
-    script_interpreter: >-
-      python -m installer --accept-license --components crt --discard
     requirements:
       host:
       run:
       build:
 
   - name: {{ name }}-sdk_x64
-    script: installer.py
-    script_interpreter: >-
-      python -m installer --accept-license --components sdk --discard
     requirements:
       host:
       run:
