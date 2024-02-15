@@ -1,0 +1,1411 @@
+Updating build index: C:\Users\adrie\micromamba\envs\cf\conda-bld
+
+WARNING: No numpy version specified in conda_build_config.yaml.  Falling back to default numpy value of 1.22
+Adding in variants from internal_defaults
+C:\Users\adrie\micromamba\envs\cf\Lib\site-packages\conda_build\environ.py:498: UserWarning: The environment variable 'CONDA_BLD_REGEX_CHUNK_SIZE' is being passed through with value '15000'.  If you are splitting build and test phases with --no-test, please ensure that this value is also set similarly at test time.
+  warnings.warn(
+C:\Users\adrie\micromamba\envs\cf\Lib\site-packages\conda_build\environ.py:498: UserWarning: The environment variable 'SDK_VERSION' is being passed through with value '18362'.  If you are splitting build and test phases with --no-test, please ensure that this value is also set similarly at test time.
+  warnings.warn(
+C:\Users\adrie\micromamba\envs\cf\Lib\site-packages\conda_build\environ.py:498: UserWarning: The environment variable 'SDK_WIN_VERSION' is being passed through with value 'Windows10'.  If you are splitting build and test phases with --no-test, please ensure that this value is also set similarly at test time.
+  warnings.warn(
+Attempting to finalize metadata for vs2022-win-sdk-x64
+warning  libmamba Cache file "C:\\Users\\adrie\\micromamba\\envs\\cf\\pkgs\\cache\\5afe41e9.json" was modified by another program
+warning  libmamba Cache file "C:\\Users\\adrie\\micromamba\\envs\\cf\\pkgs\\cache\\09cdf8bf.json" was modified by another program
+Reloading output folder: C:\Users\adrie\micromamba\envs\cf\conda-bld
+Reloading output folder: C:\Users\adrie\micromamba\envs\cf\conda-bld
+BUILD START: ['vs2022-win-sdk-x64-18362-0.tar.bz2']
+Reloading output folder: C:\Users\adrie\micromamba\envs\cf\conda-bld
+Reloading output folder: C:\Users\adrie\micromamba\envs\cf\conda-bld
+
+## Package Plan ##
+
+  environment location: C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022-win-sdk-x64_1707998561041\_h_env
+
+
+Cloning into 'C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022-win-sdk-x64_1707998561041\work'...
+done.
+checkout: 'improve-installer'
+Branch 'improve-installer' set up to track remote branch 'improve-installer' from 'origin'.
+Switched to a new branch 'improve-installer'
+==> C:\Program Files\Git\cmd\git.exe log -n1 <==
+
+commit 603a3d1ca38030027e2a98e32cb96ad57e792f2d
+Author: Adrien DELSALLE <ad.delsalle@gmail.com>
+Date:   Thu Feb 15 12:56:34 2024 +0100
+
+    pass installation prefix
+
+==> C:\Program Files\Git\cmd\git.exe describe --tags --dirty <==
+
+v0.0.1-9-g603a3d1
+
+==> C:\Program Files\Git\cmd\git.exe status <==
+
+On branch improve-installer
+Your branch is up to date with 'origin/improve-installer'.
+
+nothing to commit, working tree clean
+
+source tree in: C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022-win-sdk-x64_1707998561041\work
+WARNING: Using legacy MSVC compiler setup.  This will be removed in conda-build 4.0. If this recipe does not use a compiler, this message is safe to ignore.  Otherwise, use {{compiler('<language>')}} jinja2 in requirements/build.
+Rewriting env in output: {'BUILD_PREFIX': 'C:\\Users\\adrie\\micromamba\\envs\\cf\\conda-bld\\vs2022-win-sdk-x64_1707998561041\\_h_env',
+ 'PREFIX': 'C:\\Users\\adrie\\micromamba\\envs\\cf\\conda-bld\\vs2022-win-sdk-x64_1707998561041\\_h_env',
+ 'SRC_DIR': 'C:\\Users\\adrie\\micromamba\\envs\\cf\\conda-bld\\vs2022-win-sdk-x64_1707998561041\\work'}
+
+(vegeta) %SRC_DIR%>IF "" == "" (call %SRC_DIR%\build_env_setup.bat ) 
+
+(vegeta) %SRC_DIR%>set "CONDA_BUILD=1" 
+
+(vegeta) %SRC_DIR%>set "PYTHONNOUSERSITE=1" 
+
+(vegeta) %SRC_DIR%>set "CONDA_DEFAULT_ENV=%BUILD_PREFIX%" 
+
+(vegeta) %SRC_DIR%>set "ARCH=64" 
+
+(vegeta) %SRC_DIR%>set "PREFIX=%BUILD_PREFIX%" 
+
+(vegeta) %SRC_DIR%>set "BUILD_PREFIX=%BUILD_PREFIX%" 
+
+(vegeta) %SRC_DIR%>set "SYS_PREFIX=C:\Users\adrie\micromamba\envs\cf" 
+
+(vegeta) %SRC_DIR%>set "SYS_PYTHON=C:\Users\adrie\micromamba\envs\cf\python.exe" 
+
+(vegeta) %SRC_DIR%>set "SUBDIR=win-64" 
+
+(vegeta) %SRC_DIR%>set "build_platform=win-64" 
+
+(vegeta) %SRC_DIR%>set "SRC_DIR=%SRC_DIR%" 
+
+(vegeta) %SRC_DIR%>set "ROOT=C:\Users\adrie\micromamba\envs\cf" 
+
+(vegeta) %SRC_DIR%>set "CONDA_PY=311" 
+
+(vegeta) %SRC_DIR%>set "PY3K=1" 
+
+(vegeta) %SRC_DIR%>set "PY_VER=3.11" 
+
+(vegeta) %SRC_DIR%>set "STDLIB_DIR=%BUILD_PREFIX%\Lib" 
+
+(vegeta) %SRC_DIR%>set "SP_DIR=%BUILD_PREFIX%\Lib\site-packages" 
+
+(vegeta) %SRC_DIR%>set "NPY_VER=1.22" 
+
+(vegeta) %SRC_DIR%>set "CONDA_NPY=1.22" 
+
+(vegeta) %SRC_DIR%>set "NPY_DISTUTILS_APPEND_FLAGS=1" 
+
+(vegeta) %SRC_DIR%>set "PERL_VER=5.26" 
+
+(vegeta) %SRC_DIR%>set "CONDA_PERL=5.26.2" 
+
+(vegeta) %SRC_DIR%>set "LUA_VER=5" 
+
+(vegeta) %SRC_DIR%>set "CONDA_LUA=5" 
+
+(vegeta) %SRC_DIR%>set "R_VER=3.4" 
+
+(vegeta) %SRC_DIR%>set "CONDA_R=3.4" 
+
+(vegeta) %SRC_DIR%>set "CONDA_BLD_REGEX_CHUNK_SIZE=15000" 
+
+(vegeta) %SRC_DIR%>set "SDK_VERSION=18362" 
+
+(vegeta) %SRC_DIR%>set "SDK_WIN_VERSION=Windows10" 
+
+(vegeta) %SRC_DIR%>set "GIT_DESCRIBE_TAG=v0.0.1" 
+
+(vegeta) %SRC_DIR%>set "GIT_DESCRIBE_NUMBER=9" 
+
+(vegeta) %SRC_DIR%>set "GIT_DESCRIBE_HASH=g603a3d1" 
+
+(vegeta) %SRC_DIR%>set "GIT_DESCRIBE_TAG_PEP440=v0.0.1.post9+603a3d1" 
+
+(vegeta) %SRC_DIR%>set "GIT_FULL_HASH=603a3d1ca38030027e2a98e32cb96ad57e792f2d" 
+
+(vegeta) %SRC_DIR%>set "GIT_BUILD_STR=9_g603a3d1" 
+
+(vegeta) %SRC_DIR%>set "PKG_NAME=vs2022-win-sdk-x64" 
+
+(vegeta) %SRC_DIR%>set "PKG_VERSION=18362" 
+
+(vegeta) %SRC_DIR%>set "PKG_BUILDNUM=0" 
+
+(vegeta) %SRC_DIR%>set "PKG_BUILD_STRING=placeholder" 
+
+(vegeta) %SRC_DIR%>set "PKG_HASH=1234567" 
+
+(vegeta) %SRC_DIR%>set "RECIPE_DIR=C:\Users\adrie\Documents\Codes\conda-forge\staged-recipes\recipes\vs2022_win_sdk" 
+
+(vegeta) %SRC_DIR%>set "CPU_COUNT=24" 
+
+(vegeta) %SRC_DIR%>set "LANG=en_US.UTF-8" 
+
+(vegeta) %SRC_DIR%>set "SHLIB_EXT=.dll" 
+
+(vegeta) %SRC_DIR%>set "PATH=%BUILD_PREFIX%;%BUILD_PREFIX%\Library\mingw-w64\bin;%BUILD_PREFIX%\Library\usr\bin;%BUILD_PREFIX%\Library\bin;%BUILD_PREFIX%\Scripts;%BUILD_PREFIX%\bin;%BUILD_PREFIX%;%BUILD_PREFIX%\Library\mingw-w64\bin;%BUILD_PREFIX%\Library\usr\bin;%BUILD_PREFIX%\Library\bin;%BUILD_PREFIX%\Scripts;%BUILD_PREFIX%\bin;C:\Users\adrie\micromamba\envs\cf;C:\Users\adrie\micromamba\envs\cf\Library\mingw-w64\bin;C:\Users\adrie\micromamba\envs\cf\Library\usr\bin;C:\Users\adrie\micromamba\envs\cf\Library\bin;C:\Users\adrie\micromamba\envs\cf\Scripts;C:\Users\adrie\micromamba\envs\cf\bin;C:\Users\adrie\micromamba\envs\vegeta\Library\vs_buildtools\\Windows Kits\\10\\bin\\10.0.22621.0\\x64;C:\Users\adrie\micromamba\envs\vegeta\Library\vs_buildtools\\Windows Kits\\10\\bin\\10.0.22621.0\\x64\\ucrt;C:\Users\adrie\micromamba\envs\vegeta\Library\vs_buildtools\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64;C:\Users\adrie\micromamba\envs\cf\condabin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\PowerShell\7;C:\Users\adrie\AppData\Local\Microsoft\WindowsApps;.;C:\Users\adrie\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\PowerShell\7;C:\Users\adrie\micromamba\envs\vegeta\Library\vs_buildtools\\Windows Kits\\10\\bin\\10.0.22621.0\\x64;C:\Users\adrie\micromamba\envs\vegeta\Library\vs_buildtools\\Windows Kits\\10\\bin\\10.0.22621.0\\x64\\ucrt;C:\Users\adrie\micromamba\envs\vegeta\Library\vs_buildtools\\VC\\Tools\\MSVC\\14.37.32822\\bin\\Hostx64\\x64;C:\Users\adrie\micromamba\envs\cf\condabin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\PowerShell\7;C:\Users\adrie\AppData\Local\Microsoft\WindowsApps;.;C:\Users\adrie\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\PowerShell\7\;C:\Users\adrie\AppData\Local\Microsoft\WindowsApps;;C:\Users\adrie\AppData\Local\Programs\Microsoft VS Code\bin" 
+
+(vegeta) %SRC_DIR%>set "SCRIPTS=%BUILD_PREFIX%\Scripts" 
+
+(vegeta) %SRC_DIR%>set "LIBRARY_PREFIX=%BUILD_PREFIX%\Library" 
+
+(vegeta) %SRC_DIR%>set "LIBRARY_BIN=%BUILD_PREFIX%\Library\bin" 
+
+(vegeta) %SRC_DIR%>set "LIBRARY_INC=%BUILD_PREFIX%\Library\include" 
+
+(vegeta) %SRC_DIR%>set "LIBRARY_LIB=%BUILD_PREFIX%\Library\lib" 
+
+(vegeta) %SRC_DIR%>set "CYGWIN_PREFIX=/cygdrive/c/Users/adrie/micromamba/envs/cf/conda-bld/vs2022-win-sdk-x64_1707998561041/_h_env" 
+
+(vegeta) %SRC_DIR%>set "ALLUSERSPROFILE=C:\ProgramData" 
+
+(vegeta) %SRC_DIR%>set "APPDATA=C:\Users\adrie\AppData\Roaming" 
+
+(vegeta) %SRC_DIR%>set "CommonProgramFiles=C:\Program Files\Common Files" 
+
+(vegeta) %SRC_DIR%>set "CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files" 
+
+(vegeta) %SRC_DIR%>set "CommonProgramW6432=C:\Program Files\Common Files" 
+
+(vegeta) %SRC_DIR%>set "COMPUTERNAME=DESKTOP-R2QFHMM" 
+
+(vegeta) %SRC_DIR%>set "ComSpec=C:\Windows\system32\cmd.exe" 
+
+(vegeta) %SRC_DIR%>set "HOMEDRIVE=C:" 
+
+(vegeta) %SRC_DIR%>set "HOMEPATH=\Users\adrie" 
+
+(vegeta) %SRC_DIR%>set "LOCALAPPDATA=C:\Users\adrie\AppData\Local" 
+
+(vegeta) %SRC_DIR%>set "LOGONSERVER=\\DESKTOP-R2QFHMM" 
+
+(vegeta) %SRC_DIR%>set "NUMBER_OF_PROCESSORS=24" 
+
+(vegeta) %SRC_DIR%>set "PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL" 
+
+(vegeta) %SRC_DIR%>set "ProgramData=C:\ProgramData" 
+
+(vegeta) %SRC_DIR%>set "ProgramFiles=C:\Program Files" 
+
+(vegeta) %SRC_DIR%>set "ProgramFiles(x86)=C:\Program Files (x86)" 
+
+(vegeta) %SRC_DIR%>set "ProgramW6432=C:\Program Files" 
+
+(vegeta) %SRC_DIR%>set "PROMPT=(vegeta) $P$G" 
+
+(vegeta) %SRC_DIR%>set "PSModulePath=C:\Users\adrie\Documents\PowerShell\Modules;C:\Program Files\PowerShell\Modules;c:\program files\powershell\7\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules" 
+
+(vegeta) %SRC_DIR%>set "PUBLIC=C:\Users\Public" 
+
+(vegeta) %SRC_DIR%>set "SystemDrive=C:" 
+
+(vegeta) %SRC_DIR%>set "SystemRoot=C:\Windows" 
+
+(vegeta) %SRC_DIR%>set "TEMP=C:\Users\adrie\AppData\Local\Temp" 
+
+(vegeta) %SRC_DIR%>set "TMP=C:\Users\adrie\AppData\Local\Temp" 
+
+(vegeta) %SRC_DIR%>set "USERDOMAIN=DESKTOP-R2QFHMM" 
+
+(vegeta) %SRC_DIR%>set "USERNAME=adrie" 
+
+(vegeta) %SRC_DIR%>set "USERPROFILE=C:\Users\adrie" 
+
+(vegeta) %SRC_DIR%>set "windir=C:\Windows" 
+
+(vegeta) %SRC_DIR%>set "PROCESSOR_ARCHITECTURE=AMD64" 
+
+(vegeta) %SRC_DIR%>set "PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD" 
+
+(vegeta) %SRC_DIR%>set "BUILD=amd64-pc-windows-19.0.0" 
+
+(vegeta) %SRC_DIR%>set "VS140COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools\" 
+
+(vegeta) %SRC_DIR%>set "pin_run_as_build=OrderedDict([('python', OrderedDict([('min_pin', 'x.x'), ('max_pin', 'x.x')])), ('r-base', OrderedDict([('min_pin', 'x.x'), ('max_pin', 'x.x')]))])" 
+
+(vegeta) %SRC_DIR%>set "extend_keys={'pin_run_as_build', 'extend_keys', 'ignore_build_only_deps', 'ignore_version'}" 
+
+(vegeta) %SRC_DIR%>set "ignore_build_only_deps={'python', 'numpy'}" 
+
+(vegeta) %SRC_DIR%>set "cpu_optimization_target=nocona" 
+
+(vegeta) %SRC_DIR%>set "r_base=3.4" 
+
+(vegeta) %SRC_DIR%>set "target_platform=win-64" 
+
+(vegeta) %SRC_DIR%>set "vc=14" 
+
+(vegeta) %SRC_DIR%>set "fortran_compiler=gfortran" 
+
+(vegeta) %SRC_DIR%>set "c_compiler=vs2017" 
+
+(vegeta) %SRC_DIR%>set "cran_mirror=https://cran.r-project.org" 
+
+(vegeta) %SRC_DIR%>set "cxx_compiler=vs2017" 
+
+(vegeta) %SRC_DIR%>set "CONDA_BUILD_STATE=BUILD" 
+
+(vegeta) %SRC_DIR%>set "PIP_NO_BUILD_ISOLATION=False" 
+
+(vegeta) %SRC_DIR%>set "PIP_NO_DEPENDENCIES=True" 
+
+(vegeta) %SRC_DIR%>set "PIP_IGNORE_INSTALLED=True" 
+
+(vegeta) %SRC_DIR%>set "PIP_CACHE_DIR=C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022-win-sdk-x64_1707998561041\pip_cache" 
+
+(vegeta) %SRC_DIR%>set "PIP_NO_INDEX=True" 
+
+(vegeta) %SRC_DIR%>set DISTUTILS_USE_SDK=1 
+
+(vegeta) %SRC_DIR%>set MSSdk=1 
+
+(vegeta) %SRC_DIR%>set PY_VCRUNTIME_REDIST=%BUILD_PREFIX%\Library\bin\vcruntime140.dll 
+
+(vegeta) %SRC_DIR%>set "VS_VERSION=14.0" 
+
+(vegeta) %SRC_DIR%>set "VS_MAJOR=14" 
+
+(vegeta) %SRC_DIR%>set "VS_YEAR=2015" 
+
+(vegeta) %SRC_DIR%>set "CMAKE_GENERATOR=Visual Studio 14 2015 Win64" 
+
+(vegeta) %SRC_DIR%>set "MSYS2_ARG_CONV_EXCL=/AI;/AL;/OUT;/out" 
+
+(vegeta) %SRC_DIR%>set "MSYS2_ENV_CONV_EXCL=CL" 
+
+(vegeta) %SRC_DIR%>call "C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools\..\..\VC\vcvarsall.bat" amd64 
+Le chemin d’accès spécifié est introuvable.
+
+(vegeta) %SRC_DIR%>set "INCLUDE=%BUILD_PREFIX%\Library\include;C:\Users\adrie\micromamba\envs\vegeta\Library\vs_buildtools\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt;C:\Users\adrie\micromamba\envs\vegeta\Library\vs_buildtools\\Windows Kits\\10\\Include\\10.0.22621.0\\shared;C:\Users\adrie\micromamba\envs\vegeta\Library\vs_buildtools\\Windows Kits\\10\\Include\\10.0.22621.0\\um;C:\Users\adrie\micromamba\envs\vegeta\Library\vs_buildtools\\Windows Kits\\10\\Include\\10.0.22621.0\\winrt;C:\Users\adrie\micromamba\envs\vegeta\Library\vs_buildtools\\Windows Kits\\10\\Include\\10.0.22621.0\\cppwinrt;C:\Users\adrie\micromamba\envs\vegeta\Library\vs_buildtools\\VC\\Tools\\MSVC\\14.37.32822\\include;" 
+
+(vegeta) %SRC_DIR%>set "LIB=%BUILD_PREFIX%\Library\lib;C:\Users\adrie\micromamba\envs\vegeta\Library\vs_buildtools\\Windows Kits\\10\\Lib\\10.0.22621.0\\ucrt\\x64;C:\Users\adrie\micromamba\envs\vegeta\Library\vs_buildtools\\Windows Kits\\10\\Lib\\10.0.22621.0\\um\\x64;C:\Users\adrie\micromamba\envs\vegeta\Library\vs_buildtools\\VC\\Tools\\MSVC\\14.37.32822\\lib\\x64;" 
+
+(vegeta) %SRC_DIR%>call "C:\Users\adrie\micromamba\envs\cf\Scripts\..\condabin\conda_hook.bat" 
+
+(vegeta) %SRC_DIR%>call "C:\Users\adrie\micromamba\envs\cf\Scripts\..\condabin\conda.bat" activate --stack "%BUILD_PREFIX%" 
+
+EnvironmentLocationNotFound: Not a conda environment: C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022-win-sdk-x64_1707998561041\_h_env
+
+
+(vegeta) %SRC_DIR%>REM ===== end generated header ===== 
+
+(vegeta) %SRC_DIR%>python -m installer     --accept-license     --components sdk     --sdk-version=18362     --sdk-win-version=Windows10     --install-prefix %BUILD_PREFIX%\Library 
+Installation directory set to '%BUILD_PREFIX%\Library\vs_buildtools'
+By providing flag '--accept-license', you automatically acceptedthe Visual Studio license at https://go.microsoft.com/fwlink/?LinkId=2179911
+
+Windows SDK for Windows Store Apps Tools-x86_en-us.msi ... 100%
+
+Windows SDK for Windows Store Apps Headers-x86_en-us.msi ... 100%
+
+Windows SDK Desktop Headers x86-x86_en-us.msi ... 100%
+
+Windows SDK for Windows Store Apps Libs-x86_en-us.msi ... 100%
+
+Windows SDK Desktop Libs x64-x86_en-us.msi ... 100%
+
+Universal CRT Headers Libraries and Sources-x86_en-us.msi ... 100%
+SDK total download: 3 MB
+
+15bc5316e373960d82abc253bceaa25d.cab ... 100%
+
+2630bae9681db6a9f6722366f47d055c.cab ... 16%
+2630bae9681db6a9f6722366f47d055c.cab ... 33%
+2630bae9681db6a9f6722366f47d055c.cab ... 49%
+2630bae9681db6a9f6722366f47d055c.cab ... 66%
+2630bae9681db6a9f6722366f47d055c.cab ... 82%
+2630bae9681db6a9f6722366f47d055c.cab ... 99%
+2630bae9681db6a9f6722366f47d055c.cab ... 100%
+
+61d57a7a82309cd161a854a6f4619e52.cab ... 12%
+61d57a7a82309cd161a854a6f4619e52.cab ... 25%
+61d57a7a82309cd161a854a6f4619e52.cab ... 38%
+61d57a7a82309cd161a854a6f4619e52.cab ... 51%
+61d57a7a82309cd161a854a6f4619e52.cab ... 64%
+61d57a7a82309cd161a854a6f4619e52.cab ... 77%
+61d57a7a82309cd161a854a6f4619e52.cab ... 90%
+61d57a7a82309cd161a854a6f4619e52.cab ... 100%
+
+68de71e3e2fb9941ee5b7c77500c0508.cab ... 100%
+
+69661e20556b3ca9456b946c2c881ddd.cab ... 5%
+69661e20556b3ca9456b946c2c881ddd.cab ... 10%
+69661e20556b3ca9456b946c2c881ddd.cab ... 16%
+69661e20556b3ca9456b946c2c881ddd.cab ... 21%
+69661e20556b3ca9456b946c2c881ddd.cab ... 27%
+69661e20556b3ca9456b946c2c881ddd.cab ... 32%
+69661e20556b3ca9456b946c2c881ddd.cab ... 38%
+69661e20556b3ca9456b946c2c881ddd.cab ... 43%
+69661e20556b3ca9456b946c2c881ddd.cab ... 49%
+69661e20556b3ca9456b946c2c881ddd.cab ... 54%
+69661e20556b3ca9456b946c2c881ddd.cab ... 60%
+69661e20556b3ca9456b946c2c881ddd.cab ... 65%
+69661e20556b3ca9456b946c2c881ddd.cab ... 71%
+69661e20556b3ca9456b946c2c881ddd.cab ... 76%
+69661e20556b3ca9456b946c2c881ddd.cab ... 82%
+69661e20556b3ca9456b946c2c881ddd.cab ... 87%
+69661e20556b3ca9456b946c2c881ddd.cab ... 93%
+69661e20556b3ca9456b946c2c881ddd.cab ... 98%
+69661e20556b3ca9456b946c2c881ddd.cab ... 100%
+
+b82881a61b7477bd4eb5de2cd5037fe2.cab ... 17%
+b82881a61b7477bd4eb5de2cd5037fe2.cab ... 35%
+b82881a61b7477bd4eb5de2cd5037fe2.cab ... 53%
+b82881a61b7477bd4eb5de2cd5037fe2.cab ... 71%
+b82881a61b7477bd4eb5de2cd5037fe2.cab ... 88%
+b82881a61b7477bd4eb5de2cd5037fe2.cab ... 100%
+
+e072b3b3d3164e26b63338dce51862a7.cab ... 40%
+e072b3b3d3164e26b63338dce51862a7.cab ... 81%
+e072b3b3d3164e26b63338dce51862a7.cab ... 100%
+
+e3d1b35aecfccda1b4af6fe5988ac4be.cab ... 6%
+e3d1b35aecfccda1b4af6fe5988ac4be.cab ... 13%
+e3d1b35aecfccda1b4af6fe5988ac4be.cab ... 19%
+e3d1b35aecfccda1b4af6fe5988ac4be.cab ... 26%
+e3d1b35aecfccda1b4af6fe5988ac4be.cab ... 32%
+e3d1b35aecfccda1b4af6fe5988ac4be.cab ... 39%
+e3d1b35aecfccda1b4af6fe5988ac4be.cab ... 45%
+e3d1b35aecfccda1b4af6fe5988ac4be.cab ... 52%
+e3d1b35aecfccda1b4af6fe5988ac4be.cab ... 58%
+e3d1b35aecfccda1b4af6fe5988ac4be.cab ... 65%
+e3d1b35aecfccda1b4af6fe5988ac4be.cab ... 71%
+e3d1b35aecfccda1b4af6fe5988ac4be.cab ... 78%
+e3d1b35aecfccda1b4af6fe5988ac4be.cab ... 84%
+e3d1b35aecfccda1b4af6fe5988ac4be.cab ... 91%
+e3d1b35aecfccda1b4af6fe5988ac4be.cab ... 97%
+e3d1b35aecfccda1b4af6fe5988ac4be.cab ... 100%
+
+766c0ffd568bbb31bf7fb6793383e24a.cab ... 12%
+766c0ffd568bbb31bf7fb6793383e24a.cab ... 24%
+766c0ffd568bbb31bf7fb6793383e24a.cab ... 36%
+766c0ffd568bbb31bf7fb6793383e24a.cab ... 48%
+766c0ffd568bbb31bf7fb6793383e24a.cab ... 60%
+766c0ffd568bbb31bf7fb6793383e24a.cab ... 72%
+766c0ffd568bbb31bf7fb6793383e24a.cab ... 84%
+766c0ffd568bbb31bf7fb6793383e24a.cab ... 96%
+766c0ffd568bbb31bf7fb6793383e24a.cab ... 100%
+
+8125ee239710f33ea485965f76fae646.cab ... 19%
+8125ee239710f33ea485965f76fae646.cab ... 39%
+8125ee239710f33ea485965f76fae646.cab ... 59%
+8125ee239710f33ea485965f76fae646.cab ... 78%
+8125ee239710f33ea485965f76fae646.cab ... 98%
+8125ee239710f33ea485965f76fae646.cab ... 100%
+
+c0aa6d435b0851bf34365aadabd0c20f.cab ... 26%
+c0aa6d435b0851bf34365aadabd0c20f.cab ... 52%
+c0aa6d435b0851bf34365aadabd0c20f.cab ... 78%
+c0aa6d435b0851bf34365aadabd0c20f.cab ... 100%
+
+c1c7e442409c0adbf81ae43aa0e4351f.cab ... 100%
+
+07a57cdb41ba28cced14005f087267be.cab ... 100%
+
+2e876dd22fa5e6785f137e3422dd50ec.cab ... 11%
+2e876dd22fa5e6785f137e3422dd50ec.cab ... 23%
+2e876dd22fa5e6785f137e3422dd50ec.cab ... 35%
+2e876dd22fa5e6785f137e3422dd50ec.cab ... 47%
+2e876dd22fa5e6785f137e3422dd50ec.cab ... 59%
+2e876dd22fa5e6785f137e3422dd50ec.cab ... 70%
+2e876dd22fa5e6785f137e3422dd50ec.cab ... 82%
+2e876dd22fa5e6785f137e3422dd50ec.cab ... 94%
+2e876dd22fa5e6785f137e3422dd50ec.cab ... 100%
+
+4fe4c8b88812f5339018c0eef95acdb9.cab ... 97%
+4fe4c8b88812f5339018c0eef95acdb9.cab ... 100%
+
+05047a45609f311645eebcac2739fc4c.cab ... 100%
+
+0b2a4987421d95d0cb37640889aa9e9b.cab ... 100%
+
+13d68b8a7b6678a368e2d13ff4027521.cab ... 100%
+
+463ad1b0783ebda908fd6c16a4abfe93.cab ... 100%
+
+5a22e5cde814b041749fb271547f4dd5.cab ... 12%
+5a22e5cde814b041749fb271547f4dd5.cab ... 25%
+5a22e5cde814b041749fb271547f4dd5.cab ... 37%
+5a22e5cde814b041749fb271547f4dd5.cab ... 50%
+5a22e5cde814b041749fb271547f4dd5.cab ... 62%
+5a22e5cde814b041749fb271547f4dd5.cab ... 75%
+5a22e5cde814b041749fb271547f4dd5.cab ... 87%
+5a22e5cde814b041749fb271547f4dd5.cab ... 100%
+
+ba60f891debd633ae9c26e1372703e3c.cab ... 12%
+ba60f891debd633ae9c26e1372703e3c.cab ... 25%
+ba60f891debd633ae9c26e1372703e3c.cab ... 37%
+ba60f891debd633ae9c26e1372703e3c.cab ... 50%
+ba60f891debd633ae9c26e1372703e3c.cab ... 62%
+ba60f891debd633ae9c26e1372703e3c.cab ... 75%
+ba60f891debd633ae9c26e1372703e3c.cab ... 88%
+ba60f891debd633ae9c26e1372703e3c.cab ... 100%
+
+e10768bb6e9d0ea730280336b697da66.cab ... 12%
+e10768bb6e9d0ea730280336b697da66.cab ... 25%
+e10768bb6e9d0ea730280336b697da66.cab ... 38%
+e10768bb6e9d0ea730280336b697da66.cab ... 51%
+e10768bb6e9d0ea730280336b697da66.cab ... 64%
+e10768bb6e9d0ea730280336b697da66.cab ... 77%
+e10768bb6e9d0ea730280336b697da66.cab ... 90%
+e10768bb6e9d0ea730280336b697da66.cab ... 100%
+
+f9b24c8280986c0683fbceca5326d806.cab ... 12%
+f9b24c8280986c0683fbceca5326d806.cab ... 25%
+f9b24c8280986c0683fbceca5326d806.cab ... 38%
+f9b24c8280986c0683fbceca5326d806.cab ... 51%
+f9b24c8280986c0683fbceca5326d806.cab ... 64%
+f9b24c8280986c0683fbceca5326d806.cab ... 77%
+f9b24c8280986c0683fbceca5326d806.cab ... 89%
+f9b24c8280986c0683fbceca5326d806.cab ... 100%
+
+58314d0646d7e1a25e97c902166c3155.cab ... 4%
+58314d0646d7e1a25e97c902166c3155.cab ... 9%
+58314d0646d7e1a25e97c902166c3155.cab ... 14%
+58314d0646d7e1a25e97c902166c3155.cab ... 18%
+58314d0646d7e1a25e97c902166c3155.cab ... 23%
+58314d0646d7e1a25e97c902166c3155.cab ... 28%
+58314d0646d7e1a25e97c902166c3155.cab ... 33%
+58314d0646d7e1a25e97c902166c3155.cab ... 37%
+58314d0646d7e1a25e97c902166c3155.cab ... 42%
+58314d0646d7e1a25e97c902166c3155.cab ... 47%
+58314d0646d7e1a25e97c902166c3155.cab ... 52%
+58314d0646d7e1a25e97c902166c3155.cab ... 56%
+58314d0646d7e1a25e97c902166c3155.cab ... 61%
+58314d0646d7e1a25e97c902166c3155.cab ... 66%
+58314d0646d7e1a25e97c902166c3155.cab ... 71%
+58314d0646d7e1a25e97c902166c3155.cab ... 75%
+58314d0646d7e1a25e97c902166c3155.cab ... 80%
+58314d0646d7e1a25e97c902166c3155.cab ... 85%
+58314d0646d7e1a25e97c902166c3155.cab ... 90%
+58314d0646d7e1a25e97c902166c3155.cab ... 94%
+58314d0646d7e1a25e97c902166c3155.cab ... 99%
+58314d0646d7e1a25e97c902166c3155.cab ... 100%
+
+16ab2ea2187acffa6435e334796c8c89.cab ... 100%
+
+2868a02217691d527e42fe0520627bfa.cab ... 100%
+
+6ee7bbee8435130a869cf971694fd9e2.cab ... 2%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 5%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 7%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 10%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 12%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 15%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 17%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 20%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 23%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 25%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 28%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 30%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 33%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 35%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 38%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 41%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 43%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 46%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 48%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 51%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 53%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 56%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 58%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 61%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 64%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 66%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 69%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 71%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 74%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 76%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 79%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 82%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 84%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 87%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 89%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 92%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 94%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 97%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 99%
+6ee7bbee8435130a869cf971694fd9e2.cab ... 100%
+
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 2%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 5%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 7%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 10%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 12%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 15%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 17%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 20%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 22%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 25%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 27%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 30%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 32%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 35%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 37%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 40%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 43%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 45%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 48%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 50%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 53%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 55%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 58%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 60%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 63%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 65%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 68%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 70%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 73%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 75%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 78%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 80%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 83%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 86%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 88%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 91%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 93%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 96%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 98%
+78fa3c824c2c48bd4a49ab5969adaaf7.cab ... 100%
+
+7afc7b670accd8e3cc94cfffd516f5cb.cab ... 100%
+
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 2%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 5%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 7%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 10%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 12%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 15%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 17%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 20%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 22%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 25%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 27%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 30%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 32%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 35%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 37%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 40%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 42%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 45%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 48%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 50%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 53%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 55%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 58%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 60%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 63%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 65%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 68%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 70%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 73%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 75%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 78%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 80%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 83%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 85%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 88%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 90%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 93%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 96%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 98%
+80dcdb79b8a5960a384abe5a217a7e3a.cab ... 100%
+
+96076045170fe5db6d5dcf14b6f6688e.cab ... 100%
+
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 2%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 4%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 7%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 9%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 12%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 14%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 17%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 19%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 22%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 24%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 27%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 29%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 32%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 34%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 37%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 39%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 42%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 44%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 47%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 49%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 52%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 54%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 57%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 59%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 62%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 64%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 67%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 69%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 71%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 74%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 76%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 79%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 81%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 84%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 86%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 89%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 91%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 94%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 96%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 99%
+a1e2a83aa8a71c48c742eeaff6e71928.cab ... 100%
+
+b2f03f34ff83ec013b9e45c7cd8e8a73.cab ... 100%
+
+beb5360d2daaa3167dea7ad16c28f996.cab ... 100%
+
+eca0aa33de85194cd50ed6e0aae0156f.cab ... 100%
+
+f9ff50431335056fb4fbac05b8268204.cab ... 100%
+Unpacking msi files
+Cleaning unused components
+SDK successfully installed
+
+(vegeta) %SRC_DIR%>if errorlevel 1 exit 1 
+
+Resource usage statistics from building vs2022-win-sdk-x64:
+   Process count: 3
+   CPU time: Sys=0:00:01.5, User=0:00:01.9
+   Memory: 119.7M
+   Disk usage: 92.9K
+   Time elapsed: 0:00:30.4
+
+
+Packaging vs2022-win-sdk-x64
+Packaging vs2022-win-sdk-x64-18362-0
+number of files: 5612
+   INFO: sysroot: 'C:/Windows/' files: '['winhlp32.exe', 'win.ini', 'twain_32/wiatwain.ds', 'twain_32/escndv/nx230.ds']'
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxil.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxil.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxil.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-private-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxil.dll): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxil.dll): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxil.dll): Needed DSO C:/Windows/System32/OLE32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/Newtonsoft.Json.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/uuidgen.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/uuidgen.exe): Needed DSO C:/Windows/System32/msvcrt.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/uuidgen.exe): Needed DSO C:/Windows/System32/RPCRT4.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/appxpackaging.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/appxpackaging.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/appxpackaging.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-private-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/appxpackaging.dll): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/appxpackaging.dll): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/appxpackaging.dll): Needed DSO C:/Windows/System32/OLE32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/appxpackaging.dll): Needed DSO C:/Windows/System32/OLEAUT32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/appxpackaging.dll): Needed DSO C:/Windows/System32/urlmon.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/appxpackaging.dll): Needed DSO C:/Windows/System32/ntdll.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/appxpackaging.dll): Needed DSO C:/Windows/System32/OpcServices.DLL found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/appxpackaging.dll): Needed DSO C:/Windows/System32/SHLWAPI.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/appxpackaging.dll): Needed DSO C:/Windows/System32/WINTRUST.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/appxpackaging.dll): Needed DSO C:/Windows/System32/XmlLite.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/appxpackaging.dll): Needed DSO C:/Windows/System32/CRYPT32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/appxpackaging.dll): Needed DSO C:/Windows/System32/bcrypt.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcapsviewer.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcapsviewer.exe): Needed DSO C:/Windows/System32/GDI32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcapsviewer.exe): Needed DSO C:/Windows/System32/USER32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcapsviewer.exe): Needed DSO C:/Windows/System32/msvcrt.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcapsviewer.exe): Needed DSO C:/Windows/System32/COMCTL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcapsviewer.exe): Needed DSO C:/Windows/System32/COMDLG32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcapsviewer.exe): Needed DSO C:/Windows/System32/ole32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcapsviewer.exe): Needed DSO C:/Windows/System32/VERSION.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcapsviewer.exe): Needed DSO C:/Windows/System32/SHELL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcapsviewer.exe): Needed DSO C:/Windows/System32/SHLWAPI.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcapsviewer.exe): Needed DSO C:/Windows/System32/DDRAW.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcapsviewer.exe): Needed DSO C:/Windows/System32/d3d9.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcapsviewer.exe): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxil.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxil.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxil.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-private-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxil.dll): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxil.dll): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxil.dll): Needed DSO C:/Windows/System32/OLE32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mftrace.exe): Needed DSO C:/Windows/System32/msvcrt.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mftrace.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-errorhandling-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mftrace.exe): Needed DSO C:/Windows/System32/OLEAUT32.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mftrace.exe): $RPATH/api-ms-win-core-console-l2-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mftrace.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-processenvironment-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mftrace.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-com-l1-1-0.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mftrace.exe): $RPATH/api-ms-win-eventing-tdh-l1-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mftrace.exe): $RPATH/api-ms-win-core-toolhelp-l1-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mftrace.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-handle-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mftrace.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mftrace.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-console-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mftrace.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-string-l1-1-0.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mftrace.exe): $RPATH/api-ms-win-core-libraryloader-l1-2-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mftrace.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-synch-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mftrace.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-synch-l1-2-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mftrace.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-profile-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mftrace.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-processthreads-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mftrace.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-sysinfo-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mftrace.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-rtlsupport-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mftrace.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-debug-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mftrace.exe): Needed DSO C:/Windows/System32/dbghelp.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mftrace.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-security-base-l1-1-0.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mftrace.exe): $RPATH/api-ms-win-core-registry-l1-1-1.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mftrace.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-registry-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mftrace.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-eventing-controller-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mftrace.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-eventing-legacy-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mftrace.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-processthreads-l1-1-1.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mftrace.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-debug-l1-1-1.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mftrace.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-wow64-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mftrace.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-memory-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mftrace.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-eventing-consumer-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mftrace.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-timezone-l1-1-0.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mftrace.exe): $RPATH/api-ms-win-core-delayload-l1-1-1.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mftrace.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-delayload-l1-1-0.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mftrace.exe): $RPATH/ext-ms-win-shell-shell32-l1-2-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/ucrt/ucrtbased.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-errorhandling-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/ucrt/ucrtbased.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/ucrt/ucrtbased.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-sysinfo-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/ucrt/ucrtbased.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-processthreads-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/ucrt/ucrtbased.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-libraryloader-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/ucrt/ucrtbased.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-synch-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/ucrt/ucrtbased.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-debug-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/ucrt/ucrtbased.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-processenvironment-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/ucrt/ucrtbased.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-file-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/ucrt/ucrtbased.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-datetime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/ucrt/ucrtbased.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/ucrt/ucrtbased.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-localization-l1-2-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/ucrt/ucrtbased.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-console-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/ucrt/ucrtbased.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-rtlsupport-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/ucrt/ucrtbased.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-processthreads-l1-1-1.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/ucrt/ucrtbased.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-handle-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/ucrt/ucrtbased.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-file-l1-2-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/ucrt/ucrtbased.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-namedpipe-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/ucrt/ucrtbased.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-timezone-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/ucrt/ucrtbased.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-file-l2-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/ucrt/ucrtbased.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-synch-l1-2-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/ucrt/ucrtbased.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-profile-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/ucrt/ucrtbased.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-memory-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/ucrt/ucrtbased.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-util-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/ucrt/ucrtbased.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-interlocked-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/Microsoft.Azure.KeyVault.Core.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/MBN/arm/microsoft.mbn.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/accevent.exe): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/accevent.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/accevent.exe): Needed DSO C:/Windows/System32/GDI32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/accevent.exe): Needed DSO C:/Windows/System32/USER32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/accevent.exe): Needed DSO C:/Windows/System32/msvcrt.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/accevent.exe): Needed DSO C:/Windows/System32/OLEACC.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/accevent.exe): Needed DSO C:/Windows/System32/ole32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/accevent.exe): Needed DSO C:/Windows/System32/OLEAUT32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/accevent.exe): Needed DSO C:/Windows/System32/SHELL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/accevent.exe): Needed DSO C:/Windows/System32/COMDLG32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/accevent.exe): Needed DSO C:/Windows/System32/COMCTL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/accevent.exe): Needed DSO C:/Windows/System32/VERSION.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/accevent.exe): Library\vs_buildtools\Windows Kits\10\bin\10.0.18362.0\x64\EVENT.dll not found in any packages
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/Microsoft.WindowsAzure.Configuration.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mt.exe): Needed DSO C:/Windows/System32/NTDLL.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mt.exe): Needed DSO C:/Windows/System32/bcrypt.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mt.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mt.exe): Needed DSO C:/Windows/System32/OLE32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mt.exe): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mt.exe): Needed DSO C:/Windows/System32/SHELL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mt.exe): Needed DSO C:/Windows/System32/imagehlp.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mt.exe): Needed DSO C:/Windows/System32/OLEAUT32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mt.exe): Needed DSO C:/Windows/System32/USER32.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mt.exe): Library\vs_buildtools\Windows Kits\10\bin\10.0.18362.0\x64\MidlrtMd.dll not found in any packages
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/Microsoft.Ingestion.Shared.Metrics.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/d3dcompiler_47.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/d3dcompiler_47.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-math-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/d3dcompiler_47.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/d3dcompiler_47.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-private-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/d3dcompiler_47.dll): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/d3dcompiler_47.dll): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/d3dcompiler_47.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-time-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/d3dcompiler_47.dll): Needed DSO C:/Windows/System32/RPCRT4.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/msisip.dll): Needed DSO C:/Windows/System32/msvcrt.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/msisip.dll): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/msisip.dll): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/makecert.exe): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/makecert.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/makecert.exe): Needed DSO C:/Windows/System32/msvcrt.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/makecert.exe): Needed DSO C:/Windows/System32/MSSIGN32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/makecert.exe): Needed DSO C:/Windows/System32/CRYPT32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/makecert.exe): Needed DSO C:/Windows/System32/USER32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/makecert.exe): Needed DSO C:/Windows/System32/ole32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/makecert.exe): Needed DSO C:/Windows/System32/OLEAUT32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/makecert.exe): Needed DSO C:/Windows/System32/RPCRT4.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/gamesaveutil.exe): Needed DSO C:/Windows/System32/msvcrt.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/gamesaveutil.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-synch-l1-2-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/gamesaveutil.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-errorhandling-l1-1-0.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/gamesaveutil.exe): $RPATH/api-ms-win-core-libraryloader-l1-2-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/gamesaveutil.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-profile-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/gamesaveutil.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-processthreads-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/gamesaveutil.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-sysinfo-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/gamesaveutil.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-rtlsupport-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/gamesaveutil.exe): Needed DSO C:/Windows/System32/ntdll.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/gamesaveutil.exe): Needed DSO C:/Windows/System32/CRYPT32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/gamesaveutil.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-shcore-stream-l1-1-0.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/gamesaveutil.exe): $RPATH/api-ms-win-core-heap-l2-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/gamesaveutil.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-localization-l1-2-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/gamesaveutil.exe): Needed DSO C:/Windows/System32/XmlLite.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/gamesaveutil.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-eventing-provider-l1-1-0.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/gamesaveutil.exe): $RPATH/api-ms-win-core-winrt-string-l1-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/gamesaveutil.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-synch-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/gamesaveutil.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-com-l1-1-0.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/gamesaveutil.exe): $RPATH/api-ms-win-core-winrt-l1-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/gamesaveutil.exe): $RPATH/api-ms-win-appmodel-state-l1-2-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/gamesaveutil.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-handle-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/gamesaveutil.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-threadpool-legacy-l1-1-0.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/gamesaveutil.exe): $RPATH/api-ms-win-core-winrt-error-l1-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/gamesaveutil.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-file-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/gamesaveutil.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-registry-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/gamesaveutil.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-threadpool-l1-2-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/gamesaveutil.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-file-l2-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/gamesaveutil.exe): Needed DSO C:/Windows/System32/RPCRT4.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/gamesaveutil.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-security-base-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/gamesaveutil.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-security-sddl-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/gamesaveutil.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-timezone-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/gamesaveutil.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-service-management-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/gamesaveutil.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-service-management-l2-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/gamesaveutil.exe): Needed DSO C:/Windows/System32/OLEAUT32.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/gamesaveutil.exe): $RPATH/ext-ms-win-session-usermgr-l1-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/gamesaveutil.exe): $RPATH/ext-ms-win-gaming-xblgamesave-l1-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/gamesaveutil.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/gamesaveutil.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-util-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/AccChecker/IE.Interop.MSHTML.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/inspect.exe): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/inspect.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/inspect.exe): Needed DSO C:/Windows/System32/GDI32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/inspect.exe): Needed DSO C:/Windows/System32/USER32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/inspect.exe): Needed DSO C:/Windows/System32/msvcrt.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/inspect.exe): Needed DSO C:/Windows/System32/OLEACC.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/inspect.exe): Needed DSO C:/Windows/System32/ole32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/inspect.exe): Needed DSO C:/Windows/System32/OLEAUT32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/inspect.exe): Needed DSO C:/Windows/System32/COMCTL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/inspect.exe): Needed DSO C:/Windows/System32/VERSION.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/inspect.exe): Needed DSO C:/Windows/System32/SHELL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/UIAVerify/VisualUIAVerifyNative.resources.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/UIAVerify/Interop.UIAutomationClient.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mrmsupport.dll): Needed DSO C:/Windows/System32/msvcrt.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mrmsupport.dll): Needed DSO C:/Windows/System32/OLEAUT32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mrmsupport.dll): Needed DSO C:/Windows/System32/RPCRT4.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mrmsupport.dll): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mrmsupport.dll): Needed DSO C:/Windows/System32/SHLWAPI.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mrmsupport.dll): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mrmsupport.dll): Needed DSO C:/Windows/System32/OLE32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mrmsupport.dll): Needed DSO C:/Windows/System32/USER32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): Needed DSO C:/Windows/System32/msvcrt.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): Needed DSO C:/Windows/System32/OLEAUT32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-errorhandling-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-synch-l1-1-0.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): $RPATH/api-ms-win-core-libraryloader-l1-2-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-string-obsolete-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-string-l2-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-localization-l1-2-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-registry-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-com-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-file-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-handle-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-timezone-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-processthreads-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-memory-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-util-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-processthreads-l1-1-1.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-interlocked-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-synch-l1-2-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-rtlsupport-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-profile-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-sysinfo-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-debug-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): Needed DSO C:/Windows/System32/MF.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): Needed DSO C:/Windows/System32/MFPlat.DLL found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): Needed DSO C:/Windows/System32/PROPSYS.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): $RPATH/api-ms-win-core-delayload-l1-1-1.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-delayload-l1-1-0.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): $RPATH/ext-ms-win-gdi-dc-l1-2-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): $RPATH/ext-ms-win-gdi-draw-l1-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): $RPATH/ext-ms-win-gdi-draw-l1-1-1.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): $RPATH/ext-ms-win-gdi-font-l1-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): $RPATH/ext-ms-win-gdi-font-l1-1-1.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): $RPATH/ext-ms-win-gdi-dc-create-l1-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): $RPATH/ext-ms-win-ntuser-dialogbox-l1-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): $RPATH/ext-ms-win-ntuser-draw-l1-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): $RPATH/ext-ms-win-ntuser-gui-l1-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): $RPATH/ext-ms-win-ntuser-message-l1-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): $RPATH/ext-ms-win-ntuser-misc-l1-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): $RPATH/ext-ms-win-ntuser-misc-l1-2-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): $RPATH/ext-ms-win-ntuser-window-l1-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): $RPATH/ext-ms-win-ntuser-window-l1-1-4.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): $RPATH/ext-ms-win-ntuser-windowclass-l1-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): $RPATH/ext-ms-win-rtcore-gdi-object-l1-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/tedutil.dll): $RPATH/ext-ms-win-rtcore-ntuser-cursor-l1-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/winmdidl.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/winmdidl.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/winmdidl.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-locale-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/winmdidl.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/winmdidl.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-private-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/winmdidl.exe): Needed DSO C:/Windows/System32/ole32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/winmdidl.exe): Needed DSO C:/Windows/System32/USER32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/rc.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/rc.exe): Library\vs_buildtools\Windows Kits\10\bin\10.0.18362.0\x64\RCDLL.dll not found in any packages
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/midlc.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/midlc.exe): Needed DSO C:/Windows/System32/msvcrt.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/midlc.exe): Needed DSO C:/Windows/System32/RPCRT4.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/Microsoft.ComparePackage.Lib.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/Microsoft.UniversalStore.Ingestion.Upload.Client.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/Microsoft.Data.Services.Client.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/provisioningtesthelper.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/cppwinrt.exe): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/cppwinrt.exe): Needed DSO C:/Windows/System32/SHELL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/cppwinrt.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-file-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/cppwinrt.exe): Needed DSO C:/Windows/System32/XmlLite.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/cppwinrt.exe): $RPATH/api-ms-win-core-libraryloader-l1-2-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/cppwinrt.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-processenvironment-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/cppwinrt.exe): Needed DSO C:/Windows/System32/RoMetadata.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/cppwinrt.exe): Needed DSO C:/Windows/System32/SHLWAPI.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/cppwinrt.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/cppwinrt.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-rtlsupport-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/cppwinrt.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/cppwinrt.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-timezone-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/cppwinrt.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-console-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/cppwinrt.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-localization-l1-2-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/cppwinrt.exe): Needed DSO C:/Windows/System32/OLEAUT32.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/cppwinrt.exe): $RPATH/api-ms-win-core-winrt-error-l1-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/cppwinrt.exe): $RPATH/api-ms-win-core-winrt-error-l1-1-1.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/cppwinrt.exe): $RPATH/api-ms-win-core-winrt-l1-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/cppwinrt.exe): $RPATH/api-ms-win-core-winrt-string-l1-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/cppwinrt.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-synch-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/cppwinrt.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-threadpool-l1-2-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/cppwinrt.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-com-l1-1-0.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/cppwinrt.exe): $RPATH/api-ms-win-core-com-l1-1-1.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/cppwinrt.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-synch-l1-2-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mdmerge.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mdmerge.exe): Needed DSO C:/Windows/System32/ole32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mdmerge.exe): Needed DSO C:/Windows/System32/OLEAUT32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mdmerge.exe): Needed DSO C:/Windows/System32/SHLWAPI.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mdmerge.exe): $RPATH/api-ms-win-core-path-l1-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mdmerge.exe): Library\vs_buildtools\Windows Kits\10\bin\10.0.18362.0\x64\MidlrtMd.dll not found in any packages
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/rcdll.dll): Needed DSO C:/Windows/System32/USER32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/rcdll.dll): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/rcdll.dll): Needed DSO C:/Windows/System32/bcrypt.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/MBN/x64/microsoft.mbn.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/Microsoft.Diagnostics.Tracing.EventSource.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/Microsoft.WindowsAzure.Storage.DataMovement.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/wsutilhelper.dll): Needed DSO C:/Windows/System32/msvcrt.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/wsutilhelper.dll): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/wsutilhelper.dll): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/wsutilhelper.dll): Needed DSO C:/Windows/System32/OLE32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxc.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxc.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxc.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-private-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxc.exe): Needed DSO C:/Windows/System32/OLEAUT32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxc.exe): Needed DSO C:/Windows/System32/OLE32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxc.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxc.exe): Needed DSO C:/Windows/System32/VERSION.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxc.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-console-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxc.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-file-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxc.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxc.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-localization-l1-2-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxc.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-processthreads-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxc.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-synch-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxil.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxil.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxil.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-private-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxil.dll): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxil.dll): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxil.dll): Needed DSO C:/Windows/System32/OLE32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/Microsoft.Ingestion.Shared.WebApi.Client.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/fxc.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/fxc.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/fxc.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-private-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/fxc.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/fxc.exe): Library\vs_buildtools\Windows Kits\10\bin\10.0.18362.0\x64\D3DCOMPILER_47.dll not found in any packages
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/midl.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/midl.exe): Needed DSO C:/Windows/System32/msvcrt.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/midl.exe): Needed DSO C:/Windows/System32/SHELL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/Microsoft.UniversalStore.Ingestion.Upload.UploadApiContracts.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/midlrt.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/midlrt.exe): Needed DSO C:/Windows/System32/ole32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/midlrt.exe): Needed DSO C:/Windows/System32/RPCRT4.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/midlrt.exe): Needed DSO C:/Windows/System32/bcrypt.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/midlrt.exe): $RPATH/api-ms-win-core-path-l1-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/midlrt.exe): Needed DSO C:/Windows/System32/SHLWAPI.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/midlrt.exe): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/midlrt.exe): Needed DSO C:/Windows/System32/OLEAUT32.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/midlrt.exe): Library\vs_buildtools\Windows Kits\10\bin\10.0.18362.0\x64\MidlrtMd.dll not found in any packages
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/Microsoft.Extensions.CommandLineUtils.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/System.Spatial.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/NLog.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/d3dcompiler_47.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/d3dcompiler_47.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-math-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/d3dcompiler_47.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/d3dcompiler_47.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-private-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/d3dcompiler_47.dll): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/d3dcompiler_47.dll): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/d3dcompiler_47.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-time-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/d3dcompiler_47.dll): Needed DSO C:/Windows/System32/RPCRT4.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-private-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-eventing-provider-l1-1-0.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxcompiler.dll): $RPATH/api-ms-win-core-libraryloader-l1-2-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-errorhandling-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-string-l1-1-0.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxcompiler.dll): $RPATH/api-ms-win-core-libraryloader-l1-2-1.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-com-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-synch-l1-2-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-localization-l1-2-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-rtlsupport-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-debug-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-processthreads-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-processthreads-l1-1-1.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-profile-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-sysinfo-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-interlocked-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-processenvironment-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-memory-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-synch-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-handle-l1-1-0.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxcompiler.dll): $RPATH/api-ms-win-core-console-l2-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-console-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-sysinfo-l1-2-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-file-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/OLEAUT32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-math-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-time-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-file-l1-2-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-file-l2-1-0.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxcompiler.dll): $RPATH/api-ms-win-core-heap-l2-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-locale-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-util-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mc.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mc.exe): Needed DSO C:/Windows/System32/msvcrt.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mc.exe): Needed DSO C:/Windows/System32/USER32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mc.exe): Needed DSO C:/Windows/System32/VERSION.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mc.exe): Needed DSO C:/Windows/System32/ole32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mc.exe): Needed DSO C:/Windows/System32/OLEAUT32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mc.exe): Needed DSO C:/Windows/System32/RPCRT4.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mc.exe): Needed DSO C:/Windows/System32/bcrypt.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mc.exe): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/certmgr.exe): Needed DSO C:/Windows/System32/msvcrt.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/certmgr.exe): Needed DSO C:/Windows/System32/USER32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/certmgr.exe): Needed DSO C:/Windows/System32/CRYPT32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/certmgr.exe): Needed DSO C:/Windows/System32/CRYPTUI.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/certmgr.exe): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/certmgr.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/System.Net.Http.Formatting.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/Microsoft.Data.OData.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/AccChecker/Microsoft.Diagnostics.Tracing.EventSource.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/Microsoft.IdentityModel.Clients.ActiveDirectory.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/Microsoft.Packaging.SDKUtils.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mfdetours.dll): Needed DSO C:/Windows/System32/msvcrt.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mfdetours.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-processenvironment-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mfdetours.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-errorhandling-l1-1-0.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mfdetours.dll): $RPATH/api-ms-win-core-libraryloader-l1-2-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mfdetours.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mfdetours.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-registry-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mfdetours.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-eventing-provider-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mfdetours.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mfdetours.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-synch-l1-2-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mfdetours.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-profile-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mfdetours.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-processthreads-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mfdetours.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-sysinfo-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mfdetours.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-rtlsupport-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mfdetours.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-debug-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mfdetours.dll): Needed DSO C:/Windows/System32/MFPlat.DLL found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mfdetours.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-memory-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mfdetours.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-processthreads-l1-1-1.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mfdetours.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-synch-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mfdetours.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-com-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mfdetours.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-handle-l1-1-0.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mfdetours.dll): $RPATH/api-ms-win-core-libraryloader-l1-2-1.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mfdetours.dll): Needed DSO C:/Windows/System32/MF.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/mfdetours.dll): Needed DSO C:/Windows/System32/dbghelp.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/makeappx.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/makeappx.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/makeappx.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-private-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/makeappx.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/makeappx.exe): Needed DSO C:/Windows/System32/OLEAUT32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/makeappx.exe): Needed DSO C:/Windows/System32/OLE32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/makeappx.exe): Needed DSO C:/Windows/System32/ntdll.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/makeappx.exe): Needed DSO C:/Windows/System32/urlmon.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/makeappx.exe): Needed DSO C:/Windows/System32/OpcServices.DLL found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/makeappx.exe): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/makeappx.exe): Needed DSO C:/Windows/System32/SHLWAPI.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/makeappx.exe): Needed DSO C:/Windows/System32/XmlLite.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/makeappx.exe): Needed DSO C:/Windows/System32/CRYPT32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/adpcmencode3.exe): Needed DSO C:/Windows/System32/msvcrt.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/adpcmencode3.exe): $RPATH/api-ms-win-mm-time-l1-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/adpcmencode3.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-com-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/adpcmencode3.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-file-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/adpcmencode3.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-errorhandling-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/adpcmencode3.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-handle-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/adpcmencode3.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-synch-l1-2-0.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/adpcmencode3.exe): $RPATH/api-ms-win-core-libraryloader-l1-2-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/adpcmencode3.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-profile-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/adpcmencode3.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-processthreads-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/adpcmencode3.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-sysinfo-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/adpcmencode3.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-rtlsupport-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/adpcmencode3.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-synch-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/midlrtmd.dll): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/midlrtmd.dll): Needed DSO C:/Windows/System32/OLEAUT32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/midlrtmd.dll): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/midlrtmd.dll): Needed DSO C:/Windows/System32/ole32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/d3dcompiler_47.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/d3dcompiler_47.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-math-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/d3dcompiler_47.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/d3dcompiler_47.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-private-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/d3dcompiler_47.dll): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/d3dcompiler_47.dll): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/d3dcompiler_47.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-time-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/d3dcompiler_47.dll): Needed DSO C:/Windows/System32/RPCRT4.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/wstraceutil.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/wstraceutil.exe): Needed DSO C:/Windows/System32/USER32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/wstraceutil.exe): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/wstraceutil.exe): Needed DSO C:/Windows/System32/RPCRT4.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/MBN/arm64/microsoft.mbn.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/regwinmd.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/regwinmd.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/regwinmd.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/regwinmd.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-private-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/regwinmd.exe): Needed DSO C:/Windows/System32/ole32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/regwinmd.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-rtlsupport-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/regwinmd.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-errorhandling-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/regwinmd.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-processthreads-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/regwinmd.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-processthreads-l1-1-1.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/regwinmd.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-profile-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/regwinmd.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-sysinfo-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/regwinmd.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-interlocked-l1-1-0.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/regwinmd.exe): $RPATH/api-ms-win-core-heap-l2-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/regwinmd.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/regwinmd.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-file-l1-1-0.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/regwinmd.exe): $RPATH/api-ms-win-core-winrt-string-l1-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/regwinmd.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-com-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/regwinmd.exe): Needed DSO C:/Windows/System32/bcrypt.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/regwinmd.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-processenvironment-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/regwinmd.exe): Needed DSO C:/Windows/System32/RPCRT4.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/regwinmd.exe): $RPATH/api-ms-win-ro-typeresolution-l1-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/regwinmd.exe): $RPATH/ext-ms-win-rometadata-dispenser-l1-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/regwinmd.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-locale-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/regwinmd.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-synch-l1-2-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/regwinmd.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-util-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/regwinmd.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-synch-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/regwinmd.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-localization-l1-2-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-private-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-eventing-provider-l1-1-0.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxcompiler.dll): $RPATH/api-ms-win-core-libraryloader-l1-2-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-errorhandling-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-string-l1-1-0.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxcompiler.dll): $RPATH/api-ms-win-core-libraryloader-l1-2-1.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-com-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-synch-l1-2-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-localization-l1-2-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-debug-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-processthreads-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-processthreads-l1-1-1.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-profile-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-sysinfo-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-interlocked-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-processenvironment-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-memory-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-synch-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-handle-l1-1-0.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxcompiler.dll): $RPATH/api-ms-win-core-console-l2-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-console-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-sysinfo-l1-2-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-file-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxcompiler.dll): Needed DSO C:/Windows/System32/OLEAUT32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-math-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-time-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-file-l1-2-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-file-l2-1-0.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxcompiler.dll): $RPATH/api-ms-win-core-heap-l2-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-locale-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/D3D/x86/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-util-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/wstracedump.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/wstracedump.exe): Needed DSO C:/Windows/System32/USER32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/event.dll): Needed DSO C:/Windows/System32/msvcrt.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/event.dll): Needed DSO C:/Windows/System32/OLEACC.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/event.dll): Needed DSO C:/Windows/System32/OLEAUT32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/event.dll): Needed DSO C:/Windows/System32/USER32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/event.dll): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/event.dll): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/Redist/MBN/x86/microsoft.mbn.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/topoedit.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/topoedit.exe): Needed DSO C:/Windows/System32/GDI32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/topoedit.exe): Needed DSO C:/Windows/System32/USER32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/topoedit.exe): Needed DSO C:/Windows/System32/msvcrt.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/topoedit.exe): Library\vs_buildtools\Windows Kits\10\bin\10.0.18362.0\x64\tedutil.dll found in this package
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/topoedit.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-com-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/topoedit.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-synch-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/topoedit.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/topoedit.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-memory-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/topoedit.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-processthreads-l1-1-0.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/topoedit.exe): $RPATH/api-ms-win-core-libraryloader-l1-2-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/topoedit.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-util-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/topoedit.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-processthreads-l1-1-1.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/topoedit.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-interlocked-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/topoedit.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-synch-l1-2-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/topoedit.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-errorhandling-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/topoedit.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-profile-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/topoedit.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-sysinfo-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/topoedit.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-rtlsupport-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/topoedit.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-debug-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/topoedit.exe): Needed DSO C:/Windows/System32/MF.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/topoedit.exe): Needed DSO C:/Windows/System32/MFPlat.DLL found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/topoedit.exe): Needed DSO C:/Windows/System32/WMVCore.DLL found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/topoedit.exe): $RPATH/ext-ms-win-ntuser-windowclass-l1-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/topoedit.exe): $RPATH/ext-ms-win-shell-shell32-l1-2-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/topoedit.exe): $RPATH/ext-ms-win-shell-comdlg32-l1-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/topoedit.exe): $RPATH/ext-ms-win-shell-comctl32-init-l1-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/Microsoft.Data.Edm.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/Microsoft.StoreUploader.Lib.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/UIAVerify/Microsoft.UIAutomationClient.Interop.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/Microsoft.WindowsAzure.Storage.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/makepri.exe): Needed DSO C:/Windows/System32/msvcrt.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/makepri.exe): Needed DSO C:/Windows/System32/OLEAUT32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/makepri.exe): Needed DSO C:/Windows/System32/RPCRT4.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/makepri.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/makepri.exe): Needed DSO C:/Windows/System32/OLE32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/makepri.exe): Needed DSO C:/Windows/System32/USER32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/makepri.exe): Needed DSO C:/Windows/System32/SHLWAPI.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/makepri.exe): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/Microsoft.PackageEditor.Lib.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-private-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-eventing-provider-l1-1-0.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcompiler.dll): $RPATH/api-ms-win-core-libraryloader-l1-2-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-errorhandling-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-string-l1-1-0.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcompiler.dll): $RPATH/api-ms-win-core-libraryloader-l1-2-1.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-com-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-synch-l1-2-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-localization-l1-2-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-rtlsupport-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-debug-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-processthreads-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-processthreads-l1-1-1.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-profile-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-sysinfo-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-interlocked-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-processenvironment-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-memory-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-synch-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-handle-l1-1-0.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcompiler.dll): $RPATH/api-ms-win-core-console-l2-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-console-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-sysinfo-l1-2-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-file-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/OLEAUT32.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-math-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-time-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-file-l1-2-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-file-l2-1-0.dll found in $SYSROOT
+WARNING (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcompiler.dll): $RPATH/api-ms-win-core-heap-l2-1-0.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-locale-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-win-sdk-x64,Library/vs_buildtools/Windows Kits/10/bin/10.0.18362.0/x64/dxcompiler.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-util-l1-1-0.dll found in $SYSROOT
+Fixing permissions
+INFO :: Time taken to mark (prefix)
+        0 replacements in 0 files was 5.55 seconds
+WARNING: Importing conda-verify failed.  Please be sure to test your packages.  conda install conda-verify to make this message go away.
+TEST START: C:\Users\adrie\micromamba\envs\cf\conda-bld\win-64\vs2022-win-sdk-x64-18362-0.tar.bz2
+Adding in variants from C:\Users\adrie\AppData\Local\Temp\tmpvmucnlo9\info\recipe\conda_build_config.yaml
+Nothing to test for: C:\Users\adrie\micromamba\envs\cf\conda-bld\win-64\vs2022-win-sdk-x64-18362-0.tar.bz2
+Renaming work directory 'C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022-win-sdk-x64_1707998561041\work' to 'C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022-win-sdk-x64_1707998561041\work_moved_vs2022-win-sdk-x64-18362-0_win-64_main_build_loop'
+shutil.move(work)=C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022-win-sdk-x64_1707998561041\work, dest=C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022-win-sdk-x64_1707998561041\work_moved_vs2022-win-sdk-x64-18362-0_win-64_main_build_loop)
+# Automatic uploading is disabled
+# If you want to upload package(s) to anaconda.org later, type:
+
+
+# To have conda build upload to anaconda.org automatically, use
+# $ conda config --set anaconda_upload yes
+anaconda upload ^
+    C:\Users\adrie\micromamba\envs\cf\conda-bld\win-64\vs2022-win-sdk-x64-18362-0.tar.bz2
+anaconda_upload is not set.  Not uploading wheels: []
+
+INFO :: The inputs making up the hashes for the built packages are as follows:
+{
+  "vs2022-win-sdk-x64-18362-0.tar.bz2": {
+    "recipe": {}
+  }
+}
+
+
+####################################################################################
+Resource usage summary:
+
+Total time: 0:07:41.6
+CPU usage: sys=0:00:01.5, user=0:00:01.9
+Maximum memory usage observed: 119.7M
+Total disk usage observed (not including envs): 92.9K

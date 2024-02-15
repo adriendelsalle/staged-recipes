@@ -1,0 +1,969 @@
+Updating build index: C:\Users\adrie\micromamba\envs\cf\conda-bld
+
+WARNING: No numpy version specified in conda_build_config.yaml.  Falling back to default numpy value of 1.22
+Adding in variants from internal_defaults
+C:\Users\adrie\micromamba\envs\cf\Lib\site-packages\conda_build\environ.py:498: UserWarning: The environment variable 'CONDA_BLD_REGEX_CHUNK_SIZE' is being passed through with value '15000'.  If you are splitting build and test phases with --no-test, please ensure that this value is also set similarly at test time.
+  warnings.warn(
+Attempting to finalize metadata for vs2022-crt-x64
+warning  libmamba Cache file "C:\\Users\\adrie\\micromamba\\envs\\cf\\pkgs\\cache\\5afe41e9.json" was modified by another program
+warning  libmamba Cache file "C:\\Users\\adrie\\micromamba\\envs\\cf\\pkgs\\cache\\09cdf8bf.json" was modified by another program
+Reloading output folder: C:\Users\adrie\micromamba\envs\cf\conda-bld
+Reloading output folder: C:\Users\adrie\micromamba\envs\cf\conda-bld
+Attempting to finalize metadata for vs2022-msvc-x64
+Reloading output folder: C:\Users\adrie\micromamba\envs\cf\conda-bld
+Reloading output folder: C:\Users\adrie\micromamba\envs\cf\conda-bld
+Attempting to finalize metadata for vs2022-asan-x64
+Reloading output folder: C:\Users\adrie\micromamba\envs\cf\conda-bld
+Reloading output folder: C:\Users\adrie\micromamba\envs\cf\conda-bld
+BUILD START: ['vs2022-crt-x64-14.37.17-0.tar.bz2', 'vs2022-msvc-x64-14.37.17-0.tar.bz2', 'vs2022-asan-x64-14.37.17-0.tar.bz2']
+Reloading output folder: C:\Users\adrie\micromamba\envs\cf\conda-bld
+Reloading output folder: C:\Users\adrie\micromamba\envs\cf\conda-bld
+Reloading output folder: C:\Users\adrie\micromamba\envs\cf\conda-bld
+
+## Package Plan ##
+
+  environment location: C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\_h_env
+
+
+Cloning into 'C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\work'...
+done.
+checkout: 'improve-installer'
+Branch 'improve-installer' set up to track remote branch 'improve-installer' from 'origin'.
+Switched to a new branch 'improve-installer'
+==> C:\Program Files\Git\cmd\git.exe log -n1 <==
+
+commit 603a3d1ca38030027e2a98e32cb96ad57e792f2d
+Author: Adrien DELSALLE <ad.delsalle@gmail.com>
+Date:   Thu Feb 15 12:56:34 2024 +0100
+
+    pass installation prefix
+
+==> C:\Program Files\Git\cmd\git.exe describe --tags --dirty <==
+
+v0.0.1-9-g603a3d1
+
+==> C:\Program Files\Git\cmd\git.exe status <==
+
+On branch improve-installer
+Your branch is up to date with 'origin/improve-installer'.
+
+nothing to commit, working tree clean
+
+source tree in: C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\work
+WARNING: Using legacy MSVC compiler setup.  This will be removed in conda-build 4.0. If this recipe does not use a compiler, this message is safe to ignore.  Otherwise, use {{compiler('<language>')}} jinja2 in requirements/build.
+Packaging vs2022-crt-x64
+Reloading output folder: C:\Users\adrie\micromamba\envs\cf\conda-bld
+
+## Package Plan ##
+
+  environment location: C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\_h_env
+
+
+Packaging vs2022-crt-x64-14.37.17-0
+
+(vegeta) C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\work>call "C:\Users\adrie\micromamba\envs\cf\Scripts\..\condabin\conda_hook.bat" 
+
+(vegeta) C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\work>call "C:\Users\adrie\micromamba\envs\cf\Scripts\..\condabin\conda.bat" activate --stack "C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\_h_env" 
+
+EnvironmentLocationNotFound: Not a conda environment: C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\_h_env
+
+
+(vegeta) C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\work>if /I "vs2022-crt-x64" == "vs2022-msvc-x64" (set MSVC_COMPONENT=msvc ) 
+
+(vegeta) C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\work>if /I "vs2022-crt-x64" == "vs2022-crt-x64" (set MSVC_COMPONENT=crt ) 
+
+(vegeta) C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\work>if /I "vs2022-crt-x64" == "vs2022-asan-x64" (set MSVC_COMPONENT=asan ) 
+
+(vegeta) C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\work>if /I "crt" NEQ "" (python -m installer         --accept-license         --components crt         --msvc-version=14.37.17         --install-prefix=C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\_h_env\Library ) 
+Installation directory set to 'C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\_h_env\Library\vs_buildtools'
+By providing flag '--accept-license', you automatically acceptedthe Visual Studio license at https://go.microsoft.com/fwlink/?LinkId=2179911
+Starting installation of VC component(s) {'crt'}
+Selected payload(s) are: ['microsoft.vc.14.37.17.7.crt.headers.base', 'microsoft.vc.14.37.17.7.crt.x64.desktop.base', 'microsoft.vc.14.37.17.7.crt.x64.store.base', 'microsoft.vc.14.37.17.7.crt.source.base']
+Starting download
+
+microsoft.vc.14.37.17.7.crt.headers.base ... 30%
+microsoft.vc.14.37.17.7.crt.headers.base ... 60%
+microsoft.vc.14.37.17.7.crt.headers.base ... 90%
+microsoft.vc.14.37.17.7.crt.headers.base ... 100%
+
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 2%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 4%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 6%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 9%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 11%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 13%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 16%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 18%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 20%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 22%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 25%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 27%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 29%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 32%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 34%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 36%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 39%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 41%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 43%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 45%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 48%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 50%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 52%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 55%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 57%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 59%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 61%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 64%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 66%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 68%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 71%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 73%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 75%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 78%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 80%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 82%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 84%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 87%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 89%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 91%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 94%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 96%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 98%
+microsoft.vc.14.37.17.7.crt.x64.desktop.base ... 100%
+
+microsoft.vc.14.37.17.7.crt.x64.store.base ... 4%
+microsoft.vc.14.37.17.7.crt.x64.store.base ... 8%
+microsoft.vc.14.37.17.7.crt.x64.store.base ... 12%
+microsoft.vc.14.37.17.7.crt.x64.store.base ... 16%
+microsoft.vc.14.37.17.7.crt.x64.store.base ... 21%
+microsoft.vc.14.37.17.7.crt.x64.store.base ... 25%
+microsoft.vc.14.37.17.7.crt.x64.store.base ... 29%
+microsoft.vc.14.37.17.7.crt.x64.store.base ... 33%
+microsoft.vc.14.37.17.7.crt.x64.store.base ... 37%
+microsoft.vc.14.37.17.7.crt.x64.store.base ... 42%
+microsoft.vc.14.37.17.7.crt.x64.store.base ... 46%
+microsoft.vc.14.37.17.7.crt.x64.store.base ... 50%
+microsoft.vc.14.37.17.7.crt.x64.store.base ... 54%
+microsoft.vc.14.37.17.7.crt.x64.store.base ... 58%
+microsoft.vc.14.37.17.7.crt.x64.store.base ... 63%
+microsoft.vc.14.37.17.7.crt.x64.store.base ... 67%
+microsoft.vc.14.37.17.7.crt.x64.store.base ... 71%
+microsoft.vc.14.37.17.7.crt.x64.store.base ... 75%
+microsoft.vc.14.37.17.7.crt.x64.store.base ... 79%
+microsoft.vc.14.37.17.7.crt.x64.store.base ... 84%
+microsoft.vc.14.37.17.7.crt.x64.store.base ... 88%
+microsoft.vc.14.37.17.7.crt.x64.store.base ... 92%
+microsoft.vc.14.37.17.7.crt.x64.store.base ... 96%
+microsoft.vc.14.37.17.7.crt.x64.store.base ... 100%
+
+microsoft.vc.14.37.17.7.crt.source.base ... 93%
+microsoft.vc.14.37.17.7.crt.source.base ... 100%
+VC component(s) total download: 71 MB
+Cleaning unused components
+Creating activation and deactivation hooks
+VC component(s) successfully installed
+
+(vegeta) C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\work>if errorlevel 1 exit 1 
+
+Resource usage statistics from bundling vs2022-crt-x64:
+   Process count: 2
+   CPU time: Sys=0:00:00.3, User=0:00:00.5
+   Memory: 120.3M
+   Disk usage: 93.1K
+   Time elapsed: 0:00:04.1
+
+
+number of files: 916
+   INFO: sysroot: 'C:/Windows/' files: '['winhlp32.exe', 'win.ini', 'twain_32/wiatwain.ds', 'twain_32/escndv/nx230.ds']'
+   INFO (vs2022-crt-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/lib/x64/Microsoft.VisualC.STLCLR.dll): Needed DSO C:/Windows/System32/MSCOREE.DLL found in $SYSROOT
+Fixing permissions
+INFO :: Time taken to mark (prefix)
+        0 replacements in 0 files was 0.96 seconds
+WARNING: Importing conda-verify failed.  Please be sure to test your packages.  conda install conda-verify to make this message go away.
+Packaging vs2022-msvc-x64
+Reloading output folder: C:\Users\adrie\micromamba\envs\cf\conda-bld
+
+## Package Plan ##
+
+  environment location: C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\_h_env
+
+
+
+(vegeta) C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\work>call "C:\Users\adrie\micromamba\envs\cf\Scripts\..\condabin\conda_hook.bat" 
+
+(vegeta) C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\work>call "C:\Users\adrie\micromamba\envs\cf\Scripts\..\condabin\conda.bat" activate --stack "C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\_h_env" 
+
+EnvironmentLocationNotFound: Not a conda environment: C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\_h_env
+
+
+(vegeta) C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\work>if /I "vs2022-msvc-x64" == "vs2022-msvc-x64" (set MSVC_COMPONENT=msvc ) 
+
+(vegeta) C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\work>if /I "vs2022-msvc-x64" == "vs2022-crt-x64" (set MSVC_COMPONENT=crt ) 
+
+(vegeta) C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\work>if /I "vs2022-msvc-x64" == "vs2022-asan-x64" (set MSVC_COMPONENT=asan ) 
+
+(vegeta) C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\work>if /I "msvc" NEQ "" (python -m installer         --accept-license         --components msvc         --msvc-version=14.37.17         --install-prefix=C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\_h_env\Library ) 
+Installation directory set to 'C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\_h_env\Library\vs_buildtools'
+By providing flag '--accept-license', you automatically acceptedthe Visual Studio license at https://go.microsoft.com/fwlink/?LinkId=2179911
+Starting installation of VC component(s) {'msvc'}
+Selected payload(s) are: ['microsoft.vc.14.37.17.7.tools.hostx64.targetx64.base', 'microsoft.vc.14.37.17.7.tools.hostx64.targetx64.res.base']
+Starting download
+
+microsoft.vc.14.37.17.7.tools.hostx64.targetx64.base ... 5%
+microsoft.vc.14.37.17.7.tools.hostx64.targetx64.base ... 10%
+microsoft.vc.14.37.17.7.tools.hostx64.targetx64.base ... 15%
+microsoft.vc.14.37.17.7.tools.hostx64.targetx64.base ... 21%
+microsoft.vc.14.37.17.7.tools.hostx64.targetx64.base ... 26%
+microsoft.vc.14.37.17.7.tools.hostx64.targetx64.base ... 31%
+microsoft.vc.14.37.17.7.tools.hostx64.targetx64.base ... 36%
+microsoft.vc.14.37.17.7.tools.hostx64.targetx64.base ... 42%
+microsoft.vc.14.37.17.7.tools.hostx64.targetx64.base ... 47%
+microsoft.vc.14.37.17.7.tools.hostx64.targetx64.base ... 52%
+microsoft.vc.14.37.17.7.tools.hostx64.targetx64.base ... 58%
+microsoft.vc.14.37.17.7.tools.hostx64.targetx64.base ... 63%
+microsoft.vc.14.37.17.7.tools.hostx64.targetx64.base ... 68%
+microsoft.vc.14.37.17.7.tools.hostx64.targetx64.base ... 73%
+microsoft.vc.14.37.17.7.tools.hostx64.targetx64.base ... 79%
+microsoft.vc.14.37.17.7.tools.hostx64.targetx64.base ... 84%
+microsoft.vc.14.37.17.7.tools.hostx64.targetx64.base ... 89%
+microsoft.vc.14.37.17.7.tools.hostx64.targetx64.base ... 95%
+microsoft.vc.14.37.17.7.tools.hostx64.targetx64.base ... 100%
+
+microsoft.vc.14.37.17.7.tools.hostx64.targetx64.res.base ... 100%
+VC component(s) total download: 19 MB
+Cleaning unused components
+Creating activation and deactivation hooks
+VC component(s) successfully installed
+
+(vegeta) C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\work>if errorlevel 1 exit 1 
+
+Resource usage statistics from bundling vs2022-msvc-x64:
+   Process count: 1
+   CPU time: Sys=-, User=-
+   Memory: 5.1M
+   Disk usage: 93.1K
+   Time elapsed: 0:00:02.0
+
+
+number of files: 59
+   INFO: sysroot: 'C:/Windows/' files: '['winhlp32.exe', 'win.ini', 'twain_32/wiatwain.ds', 'twain_32/escndv/nx230.ds']'
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/editbin.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+WARNING (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/editbin.exe): Library\vs_buildtools\VC\Tools\MSVC\14.37.32822\bin\Hostx64\x64\VCRUNTIME140.dll not found in any packages
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/editbin.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-stdio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/editbin.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-filesystem-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/editbin.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-process-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/editbin.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/editbin.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-math-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/editbin.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-locale-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/editbin.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/atlprov.dll): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/atlprov.dll): Needed DSO C:/Windows/System32/VCRUNTIME140.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/atlprov.dll): Needed DSO C:/Windows/System32/VCRUNTIME140_1.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/atlprov.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/atlprov.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-convert-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/atlprov.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-stdio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/atlprov.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/atlprov.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/atlprov.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-multibyte-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/atlprov.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-filesystem-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/atlprov.dll): Needed DSO C:/Windows/System32/ole32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/atlprov.dll): Needed DSO C:/Windows/System32/OLEAUT32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/atlprov.dll): Needed DSO C:/Windows/System32/USER32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c2.dll): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c2.dll): Needed DSO C:/Windows/System32/MSVCP140.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c2.dll): Needed DSO C:/Windows/System32/VCRUNTIME140.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c2.dll): Needed DSO C:/Windows/System32/VCRUNTIME140_1.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c2.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c2.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-stdio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c2.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c2.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c2.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-filesystem-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c2.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-convert-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c2.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-conio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c2.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-environment-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c2.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-utility-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c2.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-time-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c2.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-multibyte-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c2.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-math-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c2.dll): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c2.dll): Needed DSO C:/Windows/System32/MSVCP140_ATOMIC_WAIT.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c2.dll): Needed DSO C:/Windows/System32/SHLWAPI.dll found in $SYSROOT
+WARNING (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c2.dll): $RPATH/tbbmalloc.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c2.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-locale-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c2.dll): Needed DSO C:/Windows/System32/ole32.dll found in $SYSROOT
+WARNING (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c2.dll): $RPATH/msobj140.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c2.dll): Needed DSO C:/Windows/System32/dbghelp.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c2.dll): Needed DSO C:/Windows/System32/OLEAUT32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c2.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+WARNING (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c2.dll): $RPATH/pgodb140.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/d3dcompiler_47.dll): Needed DSO C:/Windows/System32/msvcrt.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/d3dcompiler_47.dll): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/d3dcompiler_47.dll): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/d3dcompiler_47.dll): Needed DSO C:/Windows/System32/RPCRT4.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/link.exe): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/link.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+WARNING (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/link.exe): Library\vs_buildtools\VC\Tools\MSVC\14.37.32822\bin\Hostx64\x64\VCRUNTIME140_1.dll not found in any packages
+WARNING (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/link.exe): Library\vs_buildtools\VC\Tools\MSVC\14.37.32822\bin\Hostx64\x64\VCRUNTIME140.dll not found in any packages
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/link.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/link.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-stdio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/link.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-convert-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/link.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/link.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-filesystem-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/link.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-time-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/link.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-environment-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/link.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-utility-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/link.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/link.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-locale-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/link.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-conio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/link.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-math-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/link.exe): Needed DSO C:/Windows/System32/PSAPI.DLL found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/link.exe): Needed DSO C:/Windows/System32/USER32.dll found in $SYSROOT
+WARNING (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/link.exe): Library\vs_buildtools\VC\Tools\MSVC\14.37.32822\bin\Hostx64\x64\MSVCP140.dll not found in any packages
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/link.exe): Library\vs_buildtools\VC\Tools\MSVC\14.37.32822\bin\Hostx64\x64\tbbmalloc.dll found in this package
+WARNING (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/link.exe): $RPATH/pgodb140.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/link.exe): Needed DSO C:/Windows/System32/imagehlp.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/link.exe): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/link.exe): Needed DSO C:/Windows/System32/ole32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/link.exe): Needed DSO C:/Windows/System32/OLEAUT32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/link.exe): Library\vs_buildtools\VC\Tools\MSVC\14.37.32822\bin\Hostx64\x64\msvcdis140.dll found in this package
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/lib.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+WARNING (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/lib.exe): Library\vs_buildtools\VC\Tools\MSVC\14.37.32822\bin\Hostx64\x64\VCRUNTIME140.dll not found in any packages
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/lib.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-stdio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/lib.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-filesystem-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/lib.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-process-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/lib.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/lib.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-math-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/lib.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-locale-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/lib.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cvtres.exe): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cvtres.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+WARNING (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cvtres.exe): Library\vs_buildtools\VC\Tools\MSVC\14.37.32822\bin\Hostx64\x64\VCRUNTIME140_1.dll not found in any packages
+WARNING (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cvtres.exe): Library\vs_buildtools\VC\Tools\MSVC\14.37.32822\bin\Hostx64\x64\VCRUNTIME140.dll not found in any packages
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cvtres.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cvtres.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cvtres.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cvtres.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-locale-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cvtres.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-filesystem-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cvtres.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-time-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cvtres.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-stdio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cvtres.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-conio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cvtres.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-convert-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cvtres.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-environment-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cvtres.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-math-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/nmake.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+WARNING (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/nmake.exe): Library\vs_buildtools\VC\Tools\MSVC\14.37.32822\bin\Hostx64\x64\VCRUNTIME140.dll not found in any packages
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/nmake.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/nmake.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/nmake.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-environment-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/nmake.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-stdio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/nmake.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/nmake.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-convert-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/nmake.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-process-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/nmake.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-filesystem-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/nmake.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-locale-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/nmake.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-conio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/nmake.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-math-l1-1-0.dll found in $SYSROOT
+WARNING (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/nmake.exe): Library\vs_buildtools\VC\Tools\MSVC\14.37.32822\bin\Hostx64\x64\MSVCP140.dll not found in any packages
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/tbbmalloc.dll): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/tbbmalloc.dll): Needed DSO C:/Windows/System32/VCRUNTIME140_1.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/tbbmalloc.dll): Needed DSO C:/Windows/System32/VCRUNTIME140.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/tbbmalloc.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-stdio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/tbbmalloc.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/tbbmalloc.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/tbbmalloc.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-environment-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/tbbmalloc.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-convert-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/tbbmalloc.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1xx.dll): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1xx.dll): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1xx.dll): Needed DSO C:/Windows/System32/VCRUNTIME140_1.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1xx.dll): Needed DSO C:/Windows/System32/VCRUNTIME140.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1xx.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-stdio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1xx.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1xx.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-convert-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1xx.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-environment-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1xx.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1xx.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1xx.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-time-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1xx.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-filesystem-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1xx.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-utility-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1xx.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-conio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1xx.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-locale-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1xx.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-multibyte-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1xx.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-math-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1xx.dll): Needed DSO C:/Windows/System32/ntdll.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1xx.dll): Needed DSO C:/Windows/System32/MSVCP140.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1xx.dll): Needed DSO C:/Windows/System32/ole32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1xx.dll): Needed DSO C:/Windows/System32/SHLWAPI.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1xx.dll): Needed DSO C:/Windows/System32/PSAPI.DLL found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1xx.dll): Needed DSO C:/Windows/System32/XmlLite.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1xx.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1xx.dll): Needed DSO C:/Windows/System32/bcrypt.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1xx.dll): Needed DSO C:/Windows/System32/OLEAUT32.dll found in $SYSROOT
+WARNING (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1xx.dll): $RPATH/TLBREF.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbst.dll): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbst.dll): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbst.dll): Needed DSO C:/Windows/System32/VCRUNTIME140.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbst.dll): Needed DSO C:/Windows/System32/VCRUNTIME140_1.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbst.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbst.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbst.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-filesystem-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbst.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-stdio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbst.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-environment-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbst.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbst.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-utility-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbst.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-locale-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbst.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-multibyte-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbst.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-conio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbst.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-time-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbst.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-convert-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbst.dll): Needed DSO C:/Windows/System32/MSVCP140.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbst.dll): Needed DSO C:/Windows/System32/MSVCP140_ATOMIC_WAIT.dll found in $SYSROOT
+WARNING (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbst.dll): $RPATH/tbbmalloc.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbst.dll): Needed DSO C:/Windows/System32/RPCRT4.dll found in $SYSROOT
+WARNING (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbst.dll): $RPATH/msobj140.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/Microsoft.VisualStudio.Telemetry.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vcmeta.dll): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vcmeta.dll): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vcmeta.dll): Needed DSO C:/Windows/System32/VCRUNTIME140_1.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vcmeta.dll): Needed DSO C:/Windows/System32/VCRUNTIME140.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vcmeta.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vcmeta.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vcmeta.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vcmeta.dll): Needed DSO C:/Windows/System32/ole32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vcmeta.dll): Needed DSO C:/Windows/System32/MSVCP140.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/CppBuildInsights.dll): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/CppBuildInsights.dll): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/CppBuildInsights.dll): Needed DSO C:/Windows/System32/ole32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/CppBuildInsights.dll): Needed DSO C:/Windows/System32/OLEAUT32.dll found in $SYSROOT
+WARNING (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/CppBuildInsights.dll): $RPATH/KernelTraceControl.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/Microsoft.VisualStudio.RemoteControl.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/Newtonsoft.Json.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/System.Runtime.CompilerServices.Unsafe.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1.dll): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1.dll): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1.dll): Needed DSO C:/Windows/System32/VCRUNTIME140_1.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1.dll): Needed DSO C:/Windows/System32/VCRUNTIME140.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-stdio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-convert-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-environment-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-time-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-filesystem-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-conio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-locale-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-multibyte-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-math-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1.dll): Needed DSO C:/Windows/System32/ntdll.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1.dll): Needed DSO C:/Windows/System32/MSVCP140.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1.dll): Needed DSO C:/Windows/System32/ole32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1.dll): Needed DSO C:/Windows/System32/OLEAUT32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1.dll): Needed DSO C:/Windows/System32/SHLWAPI.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1.dll): Needed DSO C:/Windows/System32/PSAPI.DLL found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1.dll): Needed DSO C:/Windows/System32/XmlLite.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/c1.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140_2.dll): Needed DSO C:/Windows/System32/MSVCP140.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140_2.dll): Needed DSO C:/Windows/System32/VCRUNTIME140.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140_2.dll): Needed DSO C:/Windows/System32/VCRUNTIME140_1.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140_2.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140_2.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-math-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140_2.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140_2.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140_2.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-stdio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140_2.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-locale-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140_2.dll): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/xdcmake.exe): Needed DSO C:/Windows/System32/MSCOREE.DLL found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/KernelTraceControl.dll): Needed DSO C:/Windows/System32/msvcrt.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/KernelTraceControl.dll): Needed DSO C:/Windows/System32/ntdll.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/KernelTraceControl.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-synch-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/KernelTraceControl.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-errorhandling-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/KernelTraceControl.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-com-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/KernelTraceControl.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-sysinfo-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/KernelTraceControl.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-eventing-controller-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/KernelTraceControl.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-eventing-legacy-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/KernelTraceControl.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/KernelTraceControl.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-processenvironment-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/KernelTraceControl.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-kernel32-legacy-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/KernelTraceControl.dll): Needed DSO C:/Windows/System32/OLEAUT32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/KernelTraceControl.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-synch-l1-2-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/KernelTraceControl.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-profile-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/KernelTraceControl.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-processthreads-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/KernelTraceControl.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-debug-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/KernelTraceControl.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-eventing-consumer-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/KernelTraceControl.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-eventing-classicprovider-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/KernelTraceControl.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-libraryloader-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/KernelTraceControl.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-registry-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/KernelTraceControl.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-timezone-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/KernelTraceControl.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-file-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/KernelTraceControl.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-file-l1-2-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/KernelTraceControl.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-handle-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/KernelTraceControl.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-memory-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/KernelTraceControl.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-wow64-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/KernelTraceControl.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-version-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/KernelTraceControl.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-eventing-provider-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/KernelTraceControl.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-localization-l1-2-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/KernelTraceControl.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/KernelTraceControl.dll): Needed DSO C:/Windows/System32/bcrypt.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbcore.dll): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbcore.dll): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbcore.dll): Needed DSO C:/Windows/System32/VCRUNTIME140.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbcore.dll): Needed DSO C:/Windows/System32/VCRUNTIME140_1.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbcore.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbcore.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbcore.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-filesystem-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbcore.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-stdio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbcore.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-environment-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbcore.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbcore.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-utility-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbcore.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-locale-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbcore.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-multibyte-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbcore.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-conio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbcore.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-time-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbcore.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-convert-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbcore.dll): Needed DSO C:/Windows/System32/MSVCP140.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbcore.dll): Needed DSO C:/Windows/System32/MSVCP140_ATOMIC_WAIT.dll found in $SYSROOT
+WARNING (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbcore.dll): $RPATH/tbbmalloc.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbcore.dll): Needed DSO C:/Windows/System32/RPCRT4.dll found in $SYSROOT
+WARNING (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbcore.dll): $RPATH/msobj140.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/ml64.exe): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/ml64.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+WARNING (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/ml64.exe): Library\vs_buildtools\VC\Tools\MSVC\14.37.32822\bin\Hostx64\x64\VCRUNTIME140.dll not found in any packages
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/ml64.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-convert-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/ml64.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-time-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/ml64.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/ml64.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/ml64.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-stdio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/ml64.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/ml64.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-environment-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/ml64.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-filesystem-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/ml64.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-process-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/ml64.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-conio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/ml64.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-math-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/ml64.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-locale-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbcmf.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbcmf.exe): Needed DSO C:/Windows/System32/ole32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbcmf.exe): Needed DSO C:/Windows/System32/RPCRT4.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbcmf.exe): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspft140.dll): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspft140.dll): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspft140.dll): Needed DSO C:/Windows/System32/VCRUNTIME140_1.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspft140.dll): Needed DSO C:/Windows/System32/VCRUNTIME140.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspft140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspft140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspft140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspft140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-convert-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspft140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-stdio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspft140.dll): Needed DSO C:/Windows/System32/MSVCP140.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspft140.dll): Needed DSO C:/Windows/System32/USER32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspft140.dll): Needed DSO C:/Windows/System32/ole32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspft140.dll): Needed DSO C:/Windows/System32/OLEAUT32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspft140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-environment-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspft140.dll): Needed DSO C:/Windows/System32/VERSION.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspft140.dll): Needed DSO C:/Windows/System32/SHLWAPI.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspft140.dll): Needed DSO C:/Windows/System32/XmlLite.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspft140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-locale-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspft140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-math-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140_1.dll): Needed DSO C:/Windows/System32/MSVCP140.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140_1.dll): Needed DSO C:/Windows/System32/VCRUNTIME140.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140_1.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140_1.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140_1.dll): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/Microsoft.VisualStudio.Utilities.Internal.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vcruntime140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vcruntime140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vcruntime140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vcruntime140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-stdio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vcruntime140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-convert-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vcruntime140.dll): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdb140.dll): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdb140.dll): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdb140.dll): Needed DSO C:/Windows/System32/VCRUNTIME140.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdb140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdb140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdb140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-utility-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdb140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-multibyte-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdb140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-stdio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdb140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-convert-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdb140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-filesystem-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdb140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-environment-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdb140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdb140.dll): Needed DSO C:/Windows/System32/RPCRT4.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdb140.dll): Needed DSO C:/Windows/System32/VERSION.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdb140.dll): Needed DSO C:/Windows/System32/VCRUNTIME140_1.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/ifc.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140_codecvt_ids.dll): Needed DSO C:/Windows/System32/VCRUNTIME140.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140_codecvt_ids.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140_codecvt_ids.dll): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/bscmake.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+WARNING (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/bscmake.exe): Library\vs_buildtools\VC\Tools\MSVC\14.37.32822\bin\Hostx64\x64\VCRUNTIME140.dll not found in any packages
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/bscmake.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/bscmake.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/bscmake.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/bscmake.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-stdio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/bscmake.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-filesystem-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/bscmake.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-time-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/bscmake.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-locale-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/bscmake.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-environment-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/bscmake.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-convert-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/bscmake.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-conio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/bscmake.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-math-l1-1-0.dll found in $SYSROOT
+WARNING (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/bscmake.exe): Library\vs_buildtools\VC\Tools\MSVC\14.37.32822\bin\Hostx64\x64\MSVCP140.dll not found in any packages
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/bscmake.exe): Library\vs_buildtools\VC\Tools\MSVC\14.37.32822\bin\Hostx64\x64\mspdbcore.dll found in this package
+WARNING (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/bscmake.exe): Library\vs_buildtools\VC\Tools\MSVC\14.37.32822\bin\Hostx64\x64\VCRUNTIME140_1.dll not found in any packages
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msobj140.dll): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msobj140.dll): Needed DSO C:/Windows/System32/VCRUNTIME140.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msobj140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msobj140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msobj140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-filesystem-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msobj140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-stdio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msobj140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-convert-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msobj140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-utility-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msobj140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+WARNING (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msobj140.dll): $RPATH/tbbmalloc.dll not found in packages, sysroot(s) nor the missing_dso_whitelist.
+.. is this binary repackaging?
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vcperf.exe): Library\vs_buildtools\VC\Tools\MSVC\14.37.32822\bin\Hostx64\x64\CppBuildInsights.dll found in this package
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vcperf.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vcperf.exe): Needed DSO C:/Windows/System32/ole32.dll found in $SYSROOT
+WARNING (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vcperf.exe): Library\vs_buildtools\VC\Tools\MSVC\14.37.32822\bin\Hostx64\x64\MSVCP140.dll not found in any packages
+WARNING (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vcperf.exe): Library\vs_buildtools\VC\Tools\MSVC\14.37.32822\bin\Hostx64\x64\VCRUNTIME140_1.dll not found in any packages
+WARNING (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vcperf.exe): Library\vs_buildtools\VC\Tools\MSVC\14.37.32822\bin\Hostx64\x64\VCRUNTIME140.dll not found in any packages
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vcperf.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vcperf.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vcperf.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vcperf.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-stdio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vcperf.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-math-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vcperf.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-filesystem-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vcperf.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-locale-l1-1-0.dll found in $SYSROOT
+WARNING (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vctip.exe): Library\vs_buildtools\VC\Tools\MSVC\14.37.32822\bin\Hostx64\x64\VCRUNTIME140.dll not found in any packages
+WARNING (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vctip.exe): Library\vs_buildtools\VC\Tools\MSVC\14.37.32822\bin\Hostx64\x64\MSVCP140.dll not found in any packages
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vctip.exe): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vctip.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vctip.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vctip.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-math-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vctip.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-stdio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vctip.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-locale-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vctip.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vctip.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-convert-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vctip.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+WARNING (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vctip.exe): Library\vs_buildtools\VC\Tools\MSVC\14.37.32822\bin\Hostx64\x64\VCRUNTIME140_1.dll not found in any packages
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vctip.exe): Needed DSO C:/Windows/System32/ole32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vctip.exe): Needed DSO C:/Windows/System32/OLEAUT32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vctip.exe): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/dpcmi.dll): Needed DSO C:/Windows/System32/ole32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/dpcmi.dll): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vcruntime140_1.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vcruntime140_1.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vcruntime140_1.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vcruntime140_1.dll): Needed DSO C:/Windows/System32/VCRUNTIME140.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/vcruntime140_1.dll): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+WARNING (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe): Library\vs_buildtools\VC\Tools\MSVC\14.37.32822\bin\Hostx64\x64\VCRUNTIME140.dll not found in any packages
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-filesystem-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-locale-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-stdio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-convert-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-environment-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-process-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-utility-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-math-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-conio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-time-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe): Needed DSO C:/Windows/System32/ole32.dll found in $SYSROOT
+WARNING (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe): Library\vs_buildtools\VC\Tools\MSVC\14.37.32822\bin\Hostx64\x64\MSVCP140.dll not found in any packages
+WARNING (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe): Library\vs_buildtools\VC\Tools\MSVC\14.37.32822\bin\Hostx64\x64\VCRUNTIME140_1.dll not found in any packages
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe): Needed DSO C:/Windows/System32/VERSION.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe): Needed DSO C:/Windows/System32/PSAPI.DLL found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140.dll): Needed DSO C:/Windows/System32/VCRUNTIME140.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140.dll): Needed DSO C:/Windows/System32/VCRUNTIME140_1.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-locale-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-stdio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-filesystem-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-time-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-environment-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-math-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-convert-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-utility-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140.dll): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbsrv.exe): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbsrv.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+WARNING (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbsrv.exe): Library\vs_buildtools\VC\Tools\MSVC\14.37.32822\bin\Hostx64\x64\VCRUNTIME140.dll not found in any packages
+WARNING (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbsrv.exe): Library\vs_buildtools\VC\Tools\MSVC\14.37.32822\bin\Hostx64\x64\VCRUNTIME140_1.dll not found in any packages
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbsrv.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbsrv.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-stdio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbsrv.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-time-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbsrv.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbsrv.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-convert-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbsrv.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-environment-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbsrv.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbsrv.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-math-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbsrv.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-locale-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbsrv.exe): Library\vs_buildtools\VC\Tools\MSVC\14.37.32822\bin\Hostx64\x64\mspdbcore.dll found in this package
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/mspdbsrv.exe): Needed DSO C:/Windows/System32/RPCRT4.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/Microsoft.Diagnostics.Tracing.EventSource.dll): Needed DSO C:/Windows/System32/mscoree.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/undname.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+WARNING (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/undname.exe): Library\vs_buildtools\VC\Tools\MSVC\14.37.32822\bin\Hostx64\x64\VCRUNTIME140.dll not found in any packages
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/undname.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/undname.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-stdio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/undname.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-convert-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/undname.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-filesystem-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/undname.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/undname.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-environment-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/undname.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-math-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/undname.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-locale-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcdis140.dll): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140_atomic_wait.dll): Needed DSO C:/Windows/System32/MSVCP140.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140_atomic_wait.dll): Needed DSO C:/Windows/System32/VCRUNTIME140_1.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140_atomic_wait.dll): Needed DSO C:/Windows/System32/VCRUNTIME140.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140_atomic_wait.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140_atomic_wait.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140_atomic_wait.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-locale-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140_atomic_wait.dll): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/msvcp140_atomic_wait.dll): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/dumpbin.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+WARNING (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/dumpbin.exe): Library\vs_buildtools\VC\Tools\MSVC\14.37.32822\bin\Hostx64\x64\VCRUNTIME140.dll not found in any packages
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/dumpbin.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-stdio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/dumpbin.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-filesystem-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/dumpbin.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-process-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/dumpbin.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/dumpbin.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-math-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/dumpbin.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-locale-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-msvc-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/dumpbin.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-heap-l1-1-0.dll found in $SYSROOT
+Fixing permissions
+INFO :: Time taken to mark (prefix)
+        0 replacements in 0 files was 0.10 seconds
+WARNING: Exact overlap between etc/conda/activate.d/vs_buildtools-msvc.bat in packages vs2022-msvc-x64 and vs2022-crt-x64
+WARNING: Exact overlap between etc/conda/deactivate.d/vs_buildtools-msvc.bat in packages vs2022-msvc-x64 and vs2022-crt-x64
+Packaging vs2022-asan-x64
+Reloading output folder: C:\Users\adrie\micromamba\envs\cf\conda-bld
+
+## Package Plan ##
+
+  environment location: C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\_h_env
+
+
+
+(vegeta) C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\work>call "C:\Users\adrie\micromamba\envs\cf\Scripts\..\condabin\conda_hook.bat" 
+
+(vegeta) C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\work>call "C:\Users\adrie\micromamba\envs\cf\Scripts\..\condabin\conda.bat" activate --stack "C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\_h_env" 
+
+EnvironmentLocationNotFound: Not a conda environment: C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\_h_env
+
+
+(vegeta) C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\work>if /I "vs2022-asan-x64" == "vs2022-msvc-x64" (set MSVC_COMPONENT=msvc ) 
+
+(vegeta) C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\work>if /I "vs2022-asan-x64" == "vs2022-crt-x64" (set MSVC_COMPONENT=crt ) 
+
+(vegeta) C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\work>if /I "vs2022-asan-x64" == "vs2022-asan-x64" (set MSVC_COMPONENT=asan ) 
+
+(vegeta) C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\work>if /I "asan" NEQ "" (python -m installer         --accept-license         --components asan         --msvc-version=14.37.17         --install-prefix=C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\_h_env\Library ) 
+Installation directory set to 'C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\_h_env\Library\vs_buildtools'
+By providing flag '--accept-license', you automatically acceptedthe Visual Studio license at https://go.microsoft.com/fwlink/?LinkId=2179911
+Starting installation of VC component(s) {'asan'}
+Selected payload(s) are: ['microsoft.vc.14.37.17.7.asan.headers.base', 'microsoft.vc.14.37.17.7.asan.x64.base']
+Starting download
+
+microsoft.vc.14.37.17.7.asan.headers.base ... 100%
+
+microsoft.vc.14.37.17.7.asan.x64.base ... 1%
+microsoft.vc.14.37.17.7.asan.x64.base ... 2%
+microsoft.vc.14.37.17.7.asan.x64.base ... 4%
+microsoft.vc.14.37.17.7.asan.x64.base ... 5%
+microsoft.vc.14.37.17.7.asan.x64.base ... 6%
+microsoft.vc.14.37.17.7.asan.x64.base ... 8%
+microsoft.vc.14.37.17.7.asan.x64.base ... 9%
+microsoft.vc.14.37.17.7.asan.x64.base ... 10%
+microsoft.vc.14.37.17.7.asan.x64.base ... 12%
+microsoft.vc.14.37.17.7.asan.x64.base ... 13%
+microsoft.vc.14.37.17.7.asan.x64.base ... 14%
+microsoft.vc.14.37.17.7.asan.x64.base ... 16%
+microsoft.vc.14.37.17.7.asan.x64.base ... 17%
+microsoft.vc.14.37.17.7.asan.x64.base ... 19%
+microsoft.vc.14.37.17.7.asan.x64.base ... 20%
+microsoft.vc.14.37.17.7.asan.x64.base ... 21%
+microsoft.vc.14.37.17.7.asan.x64.base ... 23%
+microsoft.vc.14.37.17.7.asan.x64.base ... 24%
+microsoft.vc.14.37.17.7.asan.x64.base ... 25%
+microsoft.vc.14.37.17.7.asan.x64.base ... 27%
+microsoft.vc.14.37.17.7.asan.x64.base ... 28%
+microsoft.vc.14.37.17.7.asan.x64.base ... 29%
+microsoft.vc.14.37.17.7.asan.x64.base ... 31%
+microsoft.vc.14.37.17.7.asan.x64.base ... 32%
+microsoft.vc.14.37.17.7.asan.x64.base ... 33%
+microsoft.vc.14.37.17.7.asan.x64.base ... 35%
+microsoft.vc.14.37.17.7.asan.x64.base ... 36%
+microsoft.vc.14.37.17.7.asan.x64.base ... 38%
+microsoft.vc.14.37.17.7.asan.x64.base ... 39%
+microsoft.vc.14.37.17.7.asan.x64.base ... 40%
+microsoft.vc.14.37.17.7.asan.x64.base ... 42%
+microsoft.vc.14.37.17.7.asan.x64.base ... 43%
+microsoft.vc.14.37.17.7.asan.x64.base ... 44%
+microsoft.vc.14.37.17.7.asan.x64.base ... 46%
+microsoft.vc.14.37.17.7.asan.x64.base ... 47%
+microsoft.vc.14.37.17.7.asan.x64.base ... 48%
+microsoft.vc.14.37.17.7.asan.x64.base ... 50%
+microsoft.vc.14.37.17.7.asan.x64.base ... 51%
+microsoft.vc.14.37.17.7.asan.x64.base ... 53%
+microsoft.vc.14.37.17.7.asan.x64.base ... 54%
+microsoft.vc.14.37.17.7.asan.x64.base ... 55%
+microsoft.vc.14.37.17.7.asan.x64.base ... 57%
+microsoft.vc.14.37.17.7.asan.x64.base ... 58%
+microsoft.vc.14.37.17.7.asan.x64.base ... 59%
+microsoft.vc.14.37.17.7.asan.x64.base ... 61%
+microsoft.vc.14.37.17.7.asan.x64.base ... 62%
+microsoft.vc.14.37.17.7.asan.x64.base ... 63%
+microsoft.vc.14.37.17.7.asan.x64.base ... 65%
+microsoft.vc.14.37.17.7.asan.x64.base ... 66%
+microsoft.vc.14.37.17.7.asan.x64.base ... 67%
+microsoft.vc.14.37.17.7.asan.x64.base ... 69%
+microsoft.vc.14.37.17.7.asan.x64.base ... 70%
+microsoft.vc.14.37.17.7.asan.x64.base ... 72%
+microsoft.vc.14.37.17.7.asan.x64.base ... 73%
+microsoft.vc.14.37.17.7.asan.x64.base ... 74%
+microsoft.vc.14.37.17.7.asan.x64.base ... 76%
+microsoft.vc.14.37.17.7.asan.x64.base ... 77%
+microsoft.vc.14.37.17.7.asan.x64.base ... 78%
+microsoft.vc.14.37.17.7.asan.x64.base ... 80%
+microsoft.vc.14.37.17.7.asan.x64.base ... 81%
+microsoft.vc.14.37.17.7.asan.x64.base ... 82%
+microsoft.vc.14.37.17.7.asan.x64.base ... 84%
+microsoft.vc.14.37.17.7.asan.x64.base ... 85%
+microsoft.vc.14.37.17.7.asan.x64.base ... 86%
+microsoft.vc.14.37.17.7.asan.x64.base ... 88%
+microsoft.vc.14.37.17.7.asan.x64.base ... 89%
+microsoft.vc.14.37.17.7.asan.x64.base ... 91%
+microsoft.vc.14.37.17.7.asan.x64.base ... 92%
+microsoft.vc.14.37.17.7.asan.x64.base ... 93%
+microsoft.vc.14.37.17.7.asan.x64.base ... 95%
+microsoft.vc.14.37.17.7.asan.x64.base ... 96%
+microsoft.vc.14.37.17.7.asan.x64.base ... 97%
+microsoft.vc.14.37.17.7.asan.x64.base ... 99%
+microsoft.vc.14.37.17.7.asan.x64.base ... 100%
+VC component(s) total download: 73 MB
+Cleaning unused components
+Creating activation and deactivation hooks
+VC component(s) successfully installed
+
+(vegeta) C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\work>if errorlevel 1 exit 1 
+
+Resource usage statistics from bundling vs2022-asan-x64:
+   Process count: 2
+   CPU time: Sys=0:00:00.1, User=0:00:00.3
+   Memory: 139.0M
+   Disk usage: 93.1K
+   Time elapsed: 0:00:04.1
+
+
+number of files: 76
+   INFO: sysroot: 'C:/Windows/' files: '['winhlp32.exe', 'win.ini', 'twain_32/wiatwain.ds', 'twain_32/escndv/nx230.ds']'
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/clang_rt.asan_dbg_dynamic-x86_64.dll): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/clang_rt.asan_dbg_dynamic-x86_64.dll): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/clang_rt.asan_dbg_dynamic-x86_64.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-synch-l1-2-0.dll found in $SYSROOT
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/clang_rt.asan_dbg_dynamic-x86_64.dll): Needed DSO C:/Windows/System32/VCRUNTIME140.dll found in $SYSROOT
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/clang_rt.asan_dbg_dynamic-x86_64.dll): Needed DSO C:/Windows/System32/VCRUNTIME140_1.dll found in $SYSROOT
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/clang_rt.asan_dbg_dynamic-x86_64.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/clang_rt.asan_dbg_dynamic-x86_64.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/clang_rt.asan_dbg_dynamic-x86_64.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-utility-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/clang_rt.asan_dbg_dynamic-x86_64.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-stdio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/clang_rt.asan_dbg_dynamic-x86_64.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-environment-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/clang_rt.asan_dynamic-x86_64.dll): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/clang_rt.asan_dynamic-x86_64.dll): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/clang_rt.asan_dynamic-x86_64.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-core-synch-l1-2-0.dll found in $SYSROOT
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/clang_rt.asan_dynamic-x86_64.dll): Needed DSO C:/Windows/System32/VCRUNTIME140.dll found in $SYSROOT
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/clang_rt.asan_dynamic-x86_64.dll): Needed DSO C:/Windows/System32/VCRUNTIME140_1.dll found in $SYSROOT
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/clang_rt.asan_dynamic-x86_64.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/clang_rt.asan_dynamic-x86_64.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/clang_rt.asan_dynamic-x86_64.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-utility-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/clang_rt.asan_dynamic-x86_64.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-stdio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/clang_rt.asan_dynamic-x86_64.dll): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-environment-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/llvm-symbolizer.exe): Needed DSO C:/Windows/System32/ADVAPI32.dll found in $SYSROOT
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/llvm-symbolizer.exe): Needed DSO C:/Windows/System32/KERNEL32.dll found in $SYSROOT
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/llvm-symbolizer.exe): Needed DSO C:/Windows/System32/MSVCP140.dll found in $SYSROOT
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/llvm-symbolizer.exe): Needed DSO C:/Windows/System32/VCRUNTIME140.dll found in $SYSROOT
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/llvm-symbolizer.exe): Needed DSO C:/Windows/System32/VCRUNTIME140_1.dll found in $SYSROOT
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/llvm-symbolizer.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-runtime-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/llvm-symbolizer.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-heap-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/llvm-symbolizer.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-stdio-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/llvm-symbolizer.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-string-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/llvm-symbolizer.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-math-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/llvm-symbolizer.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-convert-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/llvm-symbolizer.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-utility-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/llvm-symbolizer.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-environment-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/llvm-symbolizer.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-locale-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/llvm-symbolizer.exe): Needed DSO C:/Windows/System32/USER32.dll found in $SYSROOT
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/llvm-symbolizer.exe): Needed DSO C:/Windows/System32/OLEAUT32.dll found in $SYSROOT
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/llvm-symbolizer.exe): Needed DSO C:/Windows/System32/downlevel/api-ms-win-crt-time-l1-1-0.dll found in $SYSROOT
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/llvm-symbolizer.exe): Needed DSO C:/Windows/System32/SHELL32.dll found in $SYSROOT
+   INFO (vs2022-asan-x64,Library/vs_buildtools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/llvm-symbolizer.exe): Needed DSO C:/Windows/System32/ole32.dll found in $SYSROOT
+Fixing permissions
+INFO :: Time taken to mark (prefix)
+        0 replacements in 0 files was 0.16 seconds
+WARNING: Exact overlap between etc/conda/activate.d/vs_buildtools-msvc.bat in packages vs2022-asan-x64 and vs2022-crt-x64
+WARNING: Exact overlap between etc/conda/activate.d/vs_buildtools-msvc.bat in packages vs2022-asan-x64 and vs2022-msvc-x64
+WARNING: Exact overlap between etc/conda/deactivate.d/vs_buildtools-msvc.bat in packages vs2022-asan-x64 and vs2022-crt-x64
+WARNING: Exact overlap between etc/conda/deactivate.d/vs_buildtools-msvc.bat in packages vs2022-asan-x64 and vs2022-msvc-x64
+TEST START: C:\Users\adrie\micromamba\envs\cf\conda-bld\win-64\vs2022-crt-x64-14.37.17-0.tar.bz2
+WARNING: Multiple meta files found. The meta.yaml file in the base directory (C:\Users\adrie\AppData\Local\Temp\tmpuqyyr_xl\info\recipe) will be used.
+Adding in variants from C:\Users\adrie\AppData\Local\Temp\tmpuqyyr_xl\info\recipe\conda_build_config.yaml
+Nothing to test for: C:\Users\adrie\micromamba\envs\cf\conda-bld\win-64\vs2022-crt-x64-14.37.17-0.tar.bz2
+TEST START: C:\Users\adrie\micromamba\envs\cf\conda-bld\win-64\vs2022-msvc-x64-14.37.17-0.tar.bz2
+WARNING: Multiple meta files found. The meta.yaml file in the base directory (C:\Users\adrie\AppData\Local\Temp\tmpop1gmlu9\info\recipe) will be used.
+Adding in variants from C:\Users\adrie\AppData\Local\Temp\tmpop1gmlu9\info\recipe\conda_build_config.yaml
+Nothing to test for: C:\Users\adrie\micromamba\envs\cf\conda-bld\win-64\vs2022-msvc-x64-14.37.17-0.tar.bz2
+TEST START: C:\Users\adrie\micromamba\envs\cf\conda-bld\win-64\vs2022-asan-x64-14.37.17-0.tar.bz2
+WARNING: Multiple meta files found. The meta.yaml file in the base directory (C:\Users\adrie\AppData\Local\Temp\tmppbxamt6d\info\recipe) will be used.
+Adding in variants from C:\Users\adrie\AppData\Local\Temp\tmppbxamt6d\info\recipe\conda_build_config.yaml
+Nothing to test for: C:\Users\adrie\micromamba\envs\cf\conda-bld\win-64\vs2022-asan-x64-14.37.17-0.tar.bz2
+Renaming work directory 'C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\work' to 'C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\work_moved_vs2022--0_win-64_main_build_loop'
+shutil.move(work)=C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\work, dest=C:\Users\adrie\micromamba\envs\cf\conda-bld\vs2022_1708016293717\work_moved_vs2022--0_win-64_main_build_loop)
+# Automatic uploading is disabled
+# If you want to upload package(s) to anaconda.org later, type:
+
+
+# To have conda build upload to anaconda.org automatically, use
+# $ conda config --set anaconda_upload yes
+anaconda upload ^
+    C:\Users\adrie\micromamba\envs\cf\conda-bld\win-64\vs2022-crt-x64-14.37.17-0.tar.bz2 ^
+    C:\Users\adrie\micromamba\envs\cf\conda-bld\win-64\vs2022-msvc-x64-14.37.17-0.tar.bz2 ^
+    C:\Users\adrie\micromamba\envs\cf\conda-bld\win-64\vs2022-asan-x64-14.37.17-0.tar.bz2
+anaconda_upload is not set.  Not uploading wheels: []
+
+INFO :: The inputs making up the hashes for the built packages are as follows:
+{
+  "vs2022-asan-x64-14.37.17-0.tar.bz2": {
+    "recipe": {}
+  },
+  "vs2022-crt-x64-14.37.17-0.tar.bz2": {
+    "recipe": {}
+  },
+  "vs2022-msvc-x64-14.37.17-0.tar.bz2": {
+    "recipe": {}
+  }
+}
+
+
+####################################################################################
+Resource usage summary:
+
+Total time: 0:05:09.4
+CPU usage: sys=0:00:00.4, user=0:00:00.9
+Maximum memory usage observed: 139.0M
+Total disk usage observed (not including envs): 279.3K
+

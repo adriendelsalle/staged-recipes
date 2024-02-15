@@ -1,0 +1,32 @@
+{% set name = "vs2022" %}
+{% set sdk_win_version = "Windows10" %}
+{% set sdk_version = "18362" %}
+
+source:
+  git_url: https://github.com/adriendelsalle/msvc-installer
+  git_tag: improve-installer
+
+package:
+  name: {{ name }}-win-sdk-x64
+  version: {{ sdk_version }}
+
+build:
+  number: 0
+  skip: True  # [not win]
+  script_env:
+   - CONDA_BLD_REGEX_CHUNK_SIZE=15000
+   - SDK_VERSION={{ sdk_version }}
+   - SDK_WIN_VERSION={{ sdk_win_version }}
+
+about:
+  home: foo
+  summary: foo
+  description: foo
+  license: MIT
+  license_family: MIT
+  doc_url: https://simplejson.readthedocs.io/
+  dev_url: https://github.com/simplejson/simplejson
+
+extra:
+  recipe-maintainers:
+    - adriendelsalle
